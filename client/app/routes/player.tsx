@@ -172,11 +172,64 @@ export default function Player() {
         <div className="mb-8">
           {/* Current Lyric Display */}
           <div className="bg-gray-800 rounded-lg p-8 mb-6 min-h-[200px] flex items-center justify-center">
-            <div className="text-center">
+            <div className="text-center w-full max-w-4xl">
               {currentLyricIndex >= 0 && lyricsData[currentLyricIndex] ? (
-                <p className="text-3xl font-bold text-yellow-400 leading-relaxed">
-                  {lyricsData[currentLyricIndex].correct_lyric}
-                </p>
+                <div className="text-3xl font-bold leading-relaxed">
+                  {(() => {
+                    const currentLyric = lyricsData[currentLyricIndex];
+                    const nextLyric = lyricsData[currentLyricIndex + 1];
+                    const lyricStart = currentLyric.start;
+                    const lyricEnd = nextLyric
+                      ? nextLyric.start
+                      : currentLyric.start + 3; // Default 3 seconds if no next lyric
+                    const lyricDuration = lyricEnd - lyricStart;
+                    const timeInLyric = currentTime - lyricStart;
+
+                    // Create a unique animation name for this lyric
+                    const animationName = `lyric-fill-${currentLyricIndex}`;
+
+                    return (
+                      <>
+                        <style>
+                          {`
+                            .lyric-container-${currentLyricIndex} {
+                              position: relative;
+                              display: inline-block;
+                              color: #9ca3af;
+                            }
+                            .lyric-container-${currentLyricIndex}::before {
+                              content: "${currentLyric.correct_lyric.replace(
+                                /"/g,
+                                '\\"'
+                              )}";
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              color: #fbbf24;
+                              clip-path: inset(0 100% 0 0);
+                              animation: ${animationName} ${lyricDuration}s linear ${
+                            timeInLyric < 0 ? Math.abs(timeInLyric) : 0
+                          }s forwards;
+                            }
+                            @keyframes ${animationName} {
+                              from {
+                                clip-path: inset(0 100% 0 0);
+                              }
+                              to {
+                                clip-path: inset(0 0% 0 0);
+                              }
+                            }
+                          `}
+                        </style>
+                        <div className={`lyric-container-${currentLyricIndex}`}>
+                          {currentLyric.correct_lyric}
+                        </div>
+                      </>
+                    );
+                  })()}
+                </div>
               ) : (
                 <p className="text-xl text-gray-500">
                   {isPlaying
@@ -186,7 +239,7 @@ export default function Player() {
               )}
               {/* Next Lyric Preview */}
               {currentLyricIndex >= 0 && lyricsData[currentLyricIndex + 1] && (
-                <div className="text-center mb-6">
+                <div className="text-center mt-6">
                   <p className="text-2xl font-bold text-gray-400 leading-relaxed">
                     {lyricsData[currentLyricIndex + 1].correct_lyric}
                   </p>
