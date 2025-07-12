@@ -184,17 +184,16 @@ export default function Player() {
                     : "Press play to start karaoke"}
                 </p>
               )}
+              {/* Next Lyric Preview */}
+              {currentLyricIndex >= 0 && lyricsData[currentLyricIndex + 1] && (
+                <div className="text-center mb-6">
+                  <p className="text-2xl font-bold text-gray-400 leading-relaxed">
+                    {lyricsData[currentLyricIndex + 1].correct_lyric}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
-
-          {/* Next Lyric Preview */}
-          {currentLyricIndex >= 0 && lyricsData[currentLyricIndex + 1] && (
-            <div className="text-center mb-6">
-              <p className="text-lg text-gray-400">
-                Next: {lyricsData[currentLyricIndex + 1].correct_lyric}
-              </p>
-            </div>
-          )}
         </div>
 
         {/* Audio Player Controls */}
