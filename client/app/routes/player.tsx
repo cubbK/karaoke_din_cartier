@@ -212,6 +212,9 @@ export default function Player() {
                               animation: ${animationName} ${lyricDuration}s linear ${
                             timeInLyric < 0 ? Math.abs(timeInLyric) : 0
                           }s forwards;
+                              animation-play-state: ${
+                                isPlaying ? "running" : "paused"
+                              };
                             }
                             @keyframes ${animationName} {
                               from {
