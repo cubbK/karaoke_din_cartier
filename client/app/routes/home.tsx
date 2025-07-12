@@ -2,6 +2,7 @@ import { join } from "path";
 import type { Route } from "./+types/home";
 import { readdir, readFile } from "fs/promises";
 import { existsSync } from "fs";
+import { useNavigate } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Karaoke din Cartier" }];
@@ -71,10 +72,11 @@ export async function loader({ params }: Route.LoaderArgs) {
 
 export default function Home({ loaderData }: Route.ComponentProps) {
   console.log("Loader Data:", loaderData);
+  const navigate = useNavigate();
 
   const handleSongSelect = (songId: string) => {
     console.log("Selected song:", songId);
-    // Add your song selection logic here
+    navigate(`/player/${songId}`);
   };
 
   return (
@@ -166,19 +168,12 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           ))}
         </div>
 
-        {/* Add More Button */}
-        <div className="text-center mt-12">
-          <button className="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors duration-200">
-            <svg
-              className="w-4 h-4 mr-2"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-            </svg>
-            Vezi mai multe piese
-          </button>
-        </div>
+        {/* Footer */}
+        <footer className="mt-16 pt-8 border-t border-gray-700">
+          <div className="text-center">
+            <p className="text-gray-400 text-sm">Made by Dan</p>
+          </div>
+        </footer>
       </div>
     </div>
   );
