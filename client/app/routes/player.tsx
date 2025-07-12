@@ -67,33 +67,35 @@ export async function loader({ params }: Route.LoaderArgs) {
 export default function Player() {
   const { songId, metadata, lyrics, transcription, audioUrls } =
     useLoaderData<typeof loader>();
-  
-  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const instrumentalRef = useRef<HTMLAudioElement>(null);
+  const vocalRef = useRef<HTMLAudioElement>(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentLyricIndex, setCurrentLyricIndex] = useState(-1);
+  const [vocalVolume, setVocalVolume] = useState(0);
 
   // Filter transcription data to only include entries with lyrics
-  const lyricsData = transcription?.result?.filter(
-    (item: any) => item.correct_lyric && item.correct_lyric.trim() !== ""
-  ) || [];
+  const lyricsData =
+    transcription?.result?.filter(
+      (item: any) => item.correct_lyric && item.correct_lyric.trim() !== ""
+    ) || [];
 
   // Update current time and find current lyric
   useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
+    const instrumental = instrumentalRef.current;
+    const vocal = vocalRef.current;
+    if (!instrumental || !vocal) return;
 
     const updateTime = () => {
-      const time = audio.currentTime;
+      const time = instrumental.currentTime;
       setCurrentTime(time);
 
       // Find current lyric based on timing
-      const currentIndex = lyricsData.findIndex(
-        (item: any, index: number) => {
-          const nextItem = lyricsData[index + 1];
-          return time >= item.start && (!nextItem || time < nextItem.start);
-        }
-      );
+      const currentIndex = lyricsData.findIndex((item: any, index: number) => {
+        const nextItem = lyricsData[index + 1];
+        return time >= item.start && (!nextItem || time < nextItem.start);
+      });
 
       setCurrentLyricIndex(currentIndex);
     };
@@ -101,38 +103,59 @@ export default function Player() {
     const handlePlay = () => setIsPlaying(true);
     const handlePause = () => setIsPlaying(false);
 
-    audio.addEventListener('timeupdate', updateTime);
-    audio.addEventListener('play', handlePlay);
-    audio.addEventListener('pause', handlePause);
+    // Sync vocal track with instrumental
+    const syncTracks = () => {
+      if (Math.abs(vocal.currentTime - instrumental.currentTime) > 0.1) {
+        vocal.currentTime = instrumental.currentTime;
+      }
+    };
+
+    instrumental.addEventListener("timeupdate", updateTime);
+    instrumental.addEventListener("timeupdate", syncTracks);
+    instrumental.addEventListener("play", handlePlay);
+    instrumental.addEventListener("pause", handlePause);
 
     return () => {
-      audio.removeEventListener('timeupdate', updateTime);
-      audio.removeEventListener('play', handlePlay);
-      audio.removeEventListener('pause', handlePause);
+      instrumental.removeEventListener("timeupdate", updateTime);
+      instrumental.removeEventListener("timeupdate", syncTracks);
+      instrumental.removeEventListener("play", handlePlay);
+      instrumental.removeEventListener("pause", handlePause);
     };
   }, [lyricsData]);
+
+  // Update vocal volume when slider changes
+  useEffect(() => {
+    if (vocalRef.current) {
+      vocalRef.current.volume = vocalVolume / 100;
+    }
+  }, [vocalVolume]);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
   };
 
   const togglePlayPause = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
+    const instrumental = instrumentalRef.current;
+    const vocal = vocalRef.current;
+    if (!instrumental || !vocal) return;
 
     if (isPlaying) {
-      audio.pause();
+      instrumental.pause();
+      vocal.pause();
     } else {
-      audio.play();
+      instrumental.play();
+      vocal.play();
     }
   };
 
   const seekTo = (time: number) => {
-    const audio = audioRef.current;
-    if (audio) {
-      audio.currentTime = time;
+    const instrumental = instrumentalRef.current;
+    const vocal = vocalRef.current;
+    if (instrumental && vocal) {
+      instrumental.currentTime = time;
+      vocal.currentTime = time;
     }
   };
 
@@ -156,7 +179,9 @@ export default function Player() {
                 </p>
               ) : (
                 <p className="text-xl text-gray-500">
-                  {isPlaying ? "♪ Instrumental ♪" : "Press play to start karaoke"}
+                  {isPlaying
+                    ? "♪ Instrumental ♪"
+                    : "Press play to start karaoke"}
                 </p>
               )}
             </div>
@@ -175,14 +200,20 @@ export default function Player() {
         {/* Audio Player Controls */}
         <div className="bg-gray-800 p-6 rounded-lg mb-8">
           <audio
-            ref={audioRef}
+            ref={instrumentalRef}
             src={audioUrls.instrumental}
             preload="metadata"
             className="hidden"
           />
-          
+          <audio
+            ref={vocalRef}
+            src={audioUrls.vocal}
+            preload="metadata"
+            className="hidden"
+          />
+
           {/* Main Controls */}
-          <div className="flex items-center justify-center space-x-4 mb-4">
+          <div className="flex items-center justify-center space-x-4 mb-6">
             <button
               onClick={togglePlayPause}
               className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-full font-bold text-xl transition-colors"
@@ -191,51 +222,50 @@ export default function Player() {
             </button>
           </div>
 
+          {/* Vocal Volume Slider */}
+          <div className="mb-6">
+            <div className="flex items-center space-x-4">
+              <span className="text-sm text-gray-300 w-20">🎤 Vocals:</span>
+              <div className=" flex items-center space-x-4">
+                <span className="text-sm text-gray-400">0%</span>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={vocalVolume}
+                  onChange={(e) => setVocalVolume(Number(e.target.value))}
+                  className="flex-1 h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer"
+                  style={{
+                    background: `linear-gradient(to right, #eab308 0%, #eab308 ${vocalVolume}%, #374151 ${vocalVolume}%, #374151 100%)`,
+                  }}
+                />
+                <span className="text-sm text-gray-400">100%</span>
+                <span className="text-sm text-yellow-400 w-12">
+                  {vocalVolume}%
+                </span>
+              </div>
+            </div>
+          </div>
+
           {/* Progress Bar */}
           <div className="mb-4">
             <div className="flex items-center space-x-2 text-sm text-gray-400 mb-2">
               <span>{formatTime(currentTime)}</span>
               <span>/</span>
-              <span>{formatTime(audioRef.current?.duration || 0)}</span>
+              <span>{formatTime(instrumentalRef.current?.duration || 0)}</span>
             </div>
             <div className="w-full bg-gray-700 rounded-full h-2">
               <div
                 className="bg-yellow-500 h-2 rounded-full transition-all duration-200"
                 style={{
                   width: `${
-                    audioRef.current?.duration
-                      ? (currentTime / audioRef.current.duration) * 100
+                    instrumentalRef.current?.duration
+                      ? (currentTime / instrumentalRef.current.duration) * 100
                       : 0
                   }%`,
                 }}
               />
             </div>
-          </div>
-
-          {/* Track Selection */}
-          <div className="flex space-x-4">
-            <button
-              onClick={() => {
-                if (audioRef.current) {
-                  audioRef.current.src = audioUrls.instrumental;
-                  audioRef.current.load();
-                }
-              }}
-              className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded transition-colors"
-            >
-              🎵 Instrumental
-            </button>
-            <button
-              onClick={() => {
-                if (audioRef.current) {
-                  audioRef.current.src = audioUrls.vocal;
-                  audioRef.current.load();
-                }
-              }}
-              className="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded transition-colors"
-            >
-              🎤 With Vocals
-            </button>
           </div>
         </div>
 
