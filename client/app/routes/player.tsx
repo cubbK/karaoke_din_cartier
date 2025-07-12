@@ -75,6 +75,8 @@ export default function Player() {
   const [currentLyricIndex, setCurrentLyricIndex] = useState(-1);
   const [vocalVolume, setVocalVolume] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [timeWithoutVocals, setTimeWithoutVocals] = useState(0);
+  const [showInstrumentalTimer, setShowInstrumentalTimer] = useState(false);
 
   // Filter transcription data to only include entries with lyrics
   const lyricsData =
@@ -99,6 +101,32 @@ export default function Player() {
       });
 
       setCurrentLyricIndex(currentIndex);
+
+      // Check if we're in an instrumental section (no vocals)
+      if (currentIndex === -1) {
+        // Find the next lyric
+        const nextLyricIndex = lyricsData.findIndex(
+          (item: any) => item.start > time
+        );
+        if (nextLyricIndex !== -1) {
+          const timeSinceLastLyric =
+            time - (lyricsData[nextLyricIndex - 1]?.start + 3 || 0);
+          const timeToNextLyric = lyricsData[nextLyricIndex].start - time;
+
+          // Show timer if it's been more than 3 seconds since last lyric or more than 3 seconds until next
+          if (timeSinceLastLyric > 3 || timeToNextLyric > 3) {
+            setTimeWithoutVocals(timeToNextLyric);
+            setShowInstrumentalTimer(true);
+          } else {
+            setShowInstrumentalTimer(false);
+          }
+        } else {
+          setShowInstrumentalTimer(false);
+        }
+      } else {
+        setShowInstrumentalTimer(false);
+        setTimeWithoutVocals(0);
+      }
     };
 
     const handlePlay = () => setIsPlaying(true);
@@ -295,6 +323,40 @@ export default function Player() {
                         </div>
                       </>
                     );
+                  })()}
+                </div>
+              ) : showInstrumentalTimer ? (
+                <div className="space-y-4">
+                  <p
+                    className={`text-gray-500 ${
+                      isFullscreen ? "text-3xl" : "text-xl"
+                    }`}
+                  >
+                    ♪ Instrumental ♪
+                  </p>
+                  <div
+                    className={`font-bold text-yellow-400 ${
+                      isFullscreen ? "text-4xl" : "text-2xl"
+                    }`}
+                  >
+                    {Math.ceil(timeWithoutVocals)}s
+                  </div>
+                  {(() => {
+                    const nextLyricIndex = lyricsData.findIndex(
+                      (item: any) => item.start > currentTime
+                    );
+                    if (nextLyricIndex !== -1) {
+                      return (
+                        <div
+                          className={`text-gray-400 font-medium ${
+                            isFullscreen ? "text-3xl" : "text-xl"
+                          }`}
+                        >
+                          {lyricsData[nextLyricIndex].correct_lyric}
+                        </div>
+                      );
+                    }
+                    return null;
                   })()}
                 </div>
               ) : (
