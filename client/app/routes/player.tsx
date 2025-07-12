@@ -74,6 +74,7 @@ export default function Player() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentLyricIndex, setCurrentLyricIndex] = useState(-1);
   const [vocalVolume, setVocalVolume] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Filter transcription data to only include entries with lyrics
   const lyricsData =
@@ -130,6 +131,31 @@ export default function Player() {
     }
   }, [vocalVolume]);
 
+  // Handle fullscreen mode
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.key === "f" || e.key === "F") {
+        toggleFullscreen();
+      }
+      if (e.key === " ") {
+        e.preventDefault();
+        togglePlayPause();
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
+
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
@@ -150,6 +176,18 @@ export default function Player() {
     }
   };
 
+  const toggleFullscreen = async () => {
+    try {
+      if (!document.fullscreenElement) {
+        await document.documentElement.requestFullscreen();
+      } else {
+        await document.exitFullscreen();
+      }
+    } catch (error) {
+      console.error("Error toggling fullscreen:", error);
+    }
+  };
+
   const seekTo = (time: number) => {
     const instrumental = instrumentalRef.current;
     const vocal = vocalRef.current;
@@ -160,21 +198,47 @@ export default function Player() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-8">
+    <div
+      className={`min-h-screen bg-gray-900 text-white ${
+        isFullscreen ? "fixed inset-0 z-50 flex flex-col" : ""
+      }`}
+    >
+      <div
+        className={`container mx-auto px-4 py-8 ${
+          isFullscreen ? "flex flex-col h-full max-w-none" : ""
+        }`}
+      >
         {/* Header */}
-        <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold mb-2">{metadata.title}</h1>
-          <p className="text-xl text-gray-300">by {metadata.artist}</p>
+        <div className={`mb-8 text-center ${isFullscreen ? "mb-4" : ""}`}>
+          <h1
+            className={`font-bold mb-2 ${
+              isFullscreen ? "text-2xl" : "text-4xl"
+            }`}
+          >
+            {metadata.title}
+          </h1>
+          <p
+            className={`text-gray-300 ${isFullscreen ? "text-lg" : "text-xl"}`}
+          >
+            by {metadata.artist}
+          </p>
         </div>
 
         {/* Main Karaoke Display */}
-        <div className="mb-8">
+        <div className={`mb-8 ${isFullscreen ? "flex-1 flex flex-col" : ""}`}>
           {/* Current Lyric Display */}
-          <div className="bg-gray-800 rounded-lg p-8 mb-6 min-h-[200px] flex items-center justify-center">
+          <div
+            className={`bg-gray-800 rounded-lg p-8 mb-6 flex items-center justify-center ${
+              isFullscreen ? "flex-1 min-h-0" : "min-h-[200px]"
+            }`}
+          >
             <div className="text-center w-full max-w-4xl">
               {currentLyricIndex >= 0 && lyricsData[currentLyricIndex] ? (
-                <div className="text-3xl font-bold leading-relaxed">
+                <div
+                  className={`font-bold leading-relaxed ${
+                    isFullscreen ? "text-5xl" : "text-3xl"
+                  }`}
+                >
                   {(() => {
                     const currentLyric = lyricsData[currentLyricIndex];
                     const nextLyric = lyricsData[currentLyricIndex + 1];
@@ -234,7 +298,11 @@ export default function Player() {
                   })()}
                 </div>
               ) : (
-                <p className="text-xl text-gray-500">
+                <p
+                  className={`text-gray-500 ${
+                    isFullscreen ? "text-3xl" : "text-xl"
+                  }`}
+                >
                   {isPlaying
                     ? "♪ Instrumental ♪"
                     : "Press play to start karaoke"}
@@ -243,7 +311,11 @@ export default function Player() {
               {/* Next Lyric Preview */}
               {currentLyricIndex >= 0 && lyricsData[currentLyricIndex + 1] && (
                 <div className="text-center mt-6">
-                  <p className="text-2xl font-bold text-gray-400 leading-relaxed">
+                  <p
+                    className={`font-bold text-gray-400 leading-relaxed ${
+                      isFullscreen ? "text-3xl" : "text-2xl"
+                    }`}
+                  >
                     {lyricsData[currentLyricIndex + 1].correct_lyric}
                   </p>
                 </div>
@@ -253,7 +325,11 @@ export default function Player() {
         </div>
 
         {/* Audio Player Controls */}
-        <div className="bg-gray-800 p-6 rounded-lg mb-8">
+        <div
+          className={`bg-gray-800 p-6 rounded-lg mb-8 ${
+            isFullscreen ? "mb-4" : ""
+          }`}
+        >
           <audio
             ref={instrumentalRef}
             src={audioUrls.instrumental}
@@ -274,6 +350,13 @@ export default function Player() {
               className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-full font-bold text-xl transition-colors"
             >
               {isPlaying ? "⏸️ Pause" : "▶️ Play"}
+            </button>
+            <button
+              onClick={toggleFullscreen}
+              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded-full font-bold text-lg transition-colors"
+              title="Toggle Fullscreen (F)"
+            >
+              {isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
             </button>
           </div>
 
@@ -324,31 +407,33 @@ export default function Player() {
           </div>
         </div>
 
-        {/* Lyrics Timeline */}
-        <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4">Lyrics Timeline</h3>
-          <div className="bg-gray-800 p-4 rounded-lg max-h-96 overflow-y-auto">
-            {lyricsData.map((item: any, index: number) => (
-              <div
-                key={index}
-                className={`flex items-center space-x-4 p-2 rounded cursor-pointer transition-colors ${
-                  index === currentLyricIndex
-                    ? "bg-yellow-600 text-black"
-                    : "hover:bg-gray-700"
-                }`}
-                onClick={() => seekTo(item.start)}
-              >
-                <span className="text-sm text-gray-400 w-16">
-                  {formatTime(item.start)}
-                </span>
-                <span className="flex-1">{item.correct_lyric}</span>
-              </div>
-            ))}
+        {/* Lyrics Timeline - Hidden in fullscreen */}
+        {!isFullscreen && (
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold mb-4">Lyrics Timeline</h3>
+            <div className="bg-gray-800 p-4 rounded-lg max-h-96 overflow-y-auto">
+              {lyricsData.map((item: any, index: number) => (
+                <div
+                  key={index}
+                  className={`flex items-center space-x-4 p-2 rounded cursor-pointer transition-colors ${
+                    index === currentLyricIndex
+                      ? "bg-yellow-600 text-black"
+                      : "hover:bg-gray-700"
+                  }`}
+                  onClick={() => seekTo(item.start)}
+                >
+                  <span className="text-sm text-gray-400 w-16">
+                    {formatTime(item.start)}
+                  </span>
+                  <span className="flex-1">{item.correct_lyric}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* Debug Info */}
-        {transcription && (
+        {/* Debug Info - Hidden in fullscreen */}
+        {!isFullscreen && transcription && (
           <div className="mb-8">
             <details className="bg-gray-800 p-4 rounded-lg">
               <summary className="cursor-pointer text-gray-300 hover:text-white">
@@ -361,15 +446,17 @@ export default function Player() {
           </div>
         )}
 
-        {/* Navigation */}
-        <div className="flex justify-between items-center">
-          <a
-            href="/"
-            className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-colors"
-          >
-            ← Back to Songs
-          </a>
-        </div>
+        {/* Navigation - Hidden in fullscreen */}
+        {!isFullscreen && (
+          <div className="flex justify-between items-center">
+            <a
+              href="/"
+              className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              ← Back to Songs
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
