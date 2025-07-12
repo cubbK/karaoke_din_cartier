@@ -1,80 +1,79 @@
+import { join } from "path";
 import type { Route } from "./+types/home";
+import { readdir, readFile } from "fs/promises";
+import { existsSync } from "fs";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Karaoke din Cartier" }];
 }
 
-// 2000s Boom Bap Hip-Hop classics
-const karaokeSongs = [
-  {
-    id: 1,
-    title: "The Light",
-    artist: "Common",
-    background:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-    duration: "4:14",
-  },
-  {
-    id: 2,
-    title: "Ms. Jackson",
-    artist: "OutKast",
-    background:
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=300&fit=crop",
-    duration: "4:31",
-  },
-  {
-    id: 3,
-    title: "The Next Episode",
-    artist: "Dr. Dre ft. Snoop Dogg",
-    background:
-      "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&h=300&fit=crop",
-    duration: "2:41",
-  },
-  {
-    id: 4,
-    title: "Get By",
-    artist: "Talib Kweli",
-    background:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-    duration: "3:28",
-  },
-  {
-    id: 5,
-    title: "The Corner",
-    artist: "Common ft. The Last Poets",
-    background:
-      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop",
-    duration: "4:12",
-  },
-  {
-    id: 6,
-    title: "Definition",
-    artist: "Black Star",
-    background:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-    duration: "3:17",
-  },
-  {
-    id: 7,
-    title: "The Blast",
-    artist: "Reflection Eternal",
-    background:
-      "https://images.unsplash.com/photo-1520637836862-4d197d17c53a?w=400&h=300&fit=crop",
-    duration: "3:42",
-  },
-  {
-    id: 8,
-    title: "Move",
-    artist: "Little Brother",
-    background:
-      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-    duration: "3:55",
-  },
-];
+export async function loader({ params }: Route.LoaderArgs) {
+  try {
+    // Read the JSON file from the public directory
+    const filePath = join(process.cwd(), "public", "songs");
 
-export default function Home() {
-  const handleSongSelect = (song: (typeof karaokeSongs)[0]) => {
-    console.log("Selected song:", song);
+    // Get all directories
+    const files = await readdir(filePath, { withFileTypes: true });
+    const folders = files
+      .filter((file) => file.isDirectory())
+      .map((file) => file.name);
+
+    // Process each folder
+    const songsData = [];
+    for (const folder of folders) {
+      const folderPath = join(filePath, folder);
+
+      try {
+        console.log(`Processing folder: ${folder}`);
+
+        // Check if metadata file exists
+        const metadataPath = join(folderPath, "output", "metadata.json");
+        let metadata: { title: string; artist: string } = {
+          title: "",
+          artist: "",
+        };
+
+        if (existsSync(metadataPath)) {
+          try {
+            const metadataContent = await readFile(metadataPath, "utf-8");
+            metadata = JSON.parse(metadataContent);
+          } catch (metadataError) {
+            console.error(
+              `Error reading metadata for ${folder}:`,
+              metadataError
+            );
+          }
+        }
+
+        // Check if screen.png exists
+        const screenPath = join(folderPath, "output", "screen.png");
+        const hasScreenshot = existsSync(screenPath);
+
+        // Add the folder to your songs data
+        songsData.push({
+          id: folder,
+          path: folderPath,
+          metadata,
+        });
+      } catch (folderError) {
+        console.error(`Error processing folder ${folder}:`, folderError);
+      }
+    }
+
+    return { songs: songsData, folders };
+  } catch (error) {
+    console.error("Error reading songs directory:", error);
+    return { songs: [], folders: [] };
+  }
+}
+
+// 2000s Boom Bap Hip-Hop classics
+
+export default function Home({ loaderData }: Route.ComponentProps) {
+  console.log("Loader Data:", loaderData);
+
+  const handleSongSelect = (songId: string) => {
+    console.log("Selected song:", songId);
     // Add your song selection logic here
   };
 
@@ -83,14 +82,8 @@ export default function Home() {
       <div className="max-w-6xl mx-auto px-6 py-12">
         {/* Hip-Hop Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-2xl mb-6 transform rotate-3">
-            <svg
-              className="w-12 h-12 text-white transform -rotate-3"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 3v9.28l-2.44-2.44-1.42 1.42L12 15.12l3.86-3.86-1.42-1.42L12 12.28V3h-1zm7.5 3.5v10a2.5 2.5 0 01-2.5 2.5H7a2.5 2.5 0 01-2.5-2.5v-10A2.5 2.5 0 017 4h1.5v1.5H7a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-10a1 1 0 00-1-1h-1.5V4H17a2.5 2.5 0 012.5 2.5z" />
-            </svg>
+          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-2xl mb-6 transform rotate-3 text-6xl">
+            🎤
           </div>
           <h1 className="text-6xl font-black text-white mb-2 tracking-tight">
             KARAOKE
@@ -99,7 +92,7 @@ export default function Home() {
             DIN CARTIER
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            „Hip-hop românesc, din ăla care ne place.”
+            „Hip-hop românesc, din ăla care ne place."
           </p>
 
           {/* Urban divider */}
@@ -112,19 +105,20 @@ export default function Home() {
 
         {/* Hip-Hop Songs Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {karaokeSongs.map((song) => (
+          {loaderData.songs.map((song) => (
             <div
               key={song.id}
-              onClick={() => handleSongSelect(song)}
+              onClick={() => handleSongSelect(song.id)}
               className="group relative bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden border border-gray-200 hover:border-gray-300"
             >
               {/* Image */}
-              <div className="relative h-40 overflow-hidden">
+              <div className="relative h-60 overflow-hidden">
                 <img
-                  src={song.background}
-                  alt={song.title}
+                  src={`/songs/${song.id}/output/screen.png`}
+                  alt={`Song ${song.id}`}
                   className="w-full h-full object-cover"
                 />
+
                 <div className="absolute inset-0 bg-black/40"></div>
 
                 {/* Simple Play Indicator */}
@@ -151,14 +145,12 @@ export default function Home() {
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-semibold text-gray-900 mb-1 truncate">
-                      {song.title}
+                      {song.metadata.title}
                     </h3>
                     <p className="text-gray-600 text-sm mb-1 truncate">
-                      {song.artist}
+                      {song.metadata.artist}
                     </p>
-                    <p className="text-gray-500 text-xs">
-                      Hip-Hop • {song.duration}
-                    </p>
+                    <p className="text-gray-500 text-xs">Hip-Hop</p>
                   </div>
                 </div>
 
