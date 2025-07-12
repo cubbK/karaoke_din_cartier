@@ -172,6 +172,15 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         <footer className="mt-16 pt-8 border-t border-gray-700">
           <div className="text-center">
             <p className="text-gray-400 text-sm">Made by Dan</p>
+            <p className="text-gray-400 text-sm">
+              Contribute a new song:{" "}
+              <a
+                className="text-orange-500 hover:underline"
+                href="https://github.com/cubbK/karaoke_din_cartier"
+              >
+                github
+              </a>
+            </p>
           </div>
         </footer>
       </div>
