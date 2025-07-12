@@ -4,63 +4,71 @@ export function meta({}: Route.MetaArgs) {
   return [{ title: "Karaoke din Cartier" }];
 }
 
-// Boom bap and rap songs data
+// 2000s Boom Bap Hip-Hop classics
 const karaokeSongs = [
   {
     id: 1,
-    title: "N.Y. State of Mind",
-    artist: "Nas",
+    title: "The Light",
+    artist: "Common",
     background:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+    duration: "4:14",
   },
   {
     id: 2,
-    title: "C.R.E.A.M.",
-    artist: "Wu-Tang Clan",
+    title: "Ms. Jackson",
+    artist: "OutKast",
     background:
       "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=300&fit=crop",
+    duration: "4:31",
   },
   {
     id: 3,
-    title: "The World Is Yours",
-    artist: "Nas",
+    title: "The Next Episode",
+    artist: "Dr. Dre ft. Snoop Dogg",
     background:
       "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&h=300&fit=crop",
+    duration: "2:41",
   },
   {
     id: 4,
-    title: "93 'Til Infinity",
-    artist: "Souls of Mischief",
+    title: "Get By",
+    artist: "Talib Kweli",
     background:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+    duration: "3:28",
   },
   {
     id: 5,
-    title: "Mass Appeal",
-    artist: "Gang Starr",
+    title: "The Corner",
+    artist: "Common ft. The Last Poets",
     background:
       "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop",
+    duration: "4:12",
   },
   {
     id: 6,
-    title: "They Reminisce Over You",
-    artist: "Pete Rock & CL Smooth",
+    title: "Definition",
+    artist: "Black Star",
     background:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+    duration: "3:17",
   },
   {
     id: 7,
-    title: "Award Tour",
-    artist: "A Tribe Called Quest",
+    title: "The Blast",
+    artist: "Reflection Eternal",
     background:
       "https://images.unsplash.com/photo-1520637836862-4d197d17c53a?w=400&h=300&fit=crop",
+    duration: "3:42",
   },
   {
     id: 8,
-    title: "Juicy",
-    artist: "The Notorious B.I.G.",
+    title: "Move",
+    artist: "Little Brother",
     background:
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+    duration: "3:55",
   },
 ];
 
@@ -71,137 +79,94 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 p-6 relative overflow-hidden">
-      {/* Urban Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_40%,rgba(255,215,0,0.02)_50%,transparent_60%)] bg-[length:40px_40px]"></div>
-      </div>
-
-      {/* Graffiti-style corner elements */}
-      <div className="absolute top-10 left-10 w-20 h-20 border-l-4 border-t-4 border-yellow-400 opacity-30"></div>
-      <div className="absolute bottom-10 right-10 w-20 h-20 border-r-4 border-b-4 border-yellow-400 opacity-30"></div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="relative inline-block">
-            {/* Main Title */}
-            <h1
-              className="text-7xl font-black text-white mb-2 transform -rotate-1"
-              style={{
-                fontFamily: "Arial Black, Impact, sans-serif",
-                textShadow:
-                  "6px 6px 0px #000, 3px 3px 0px #ffd700, -2px -2px 0px #ffd700",
-                letterSpacing: "0.05em",
-              }}
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        {/* Hip-Hop Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl shadow-2xl mb-6 transform rotate-3">
+            <svg
+              className="w-12 h-12 text-white transform -rotate-3"
+              fill="currentColor"
+              viewBox="0 0 24 24"
             >
-              🎤KARAOKE
-            </h1>
-
-            {/* Subtitle with urban styling */}
-            <div
-              className="text-2xl font-bold text-yellow-400 -mt-1 tracking-[0.3em] transform rotate-1"
-              style={{
-                fontFamily: "Arial Black, Impact, sans-serif",
-                textShadow: "2px 2px 0px #000, 1px 1px 0px #000",
-              }}
-            >
-              DIN CARTIER
-            </div>
-
-            {/* Boom Bap subtitle */}
-            <div className="mt-3 inline-block bg-black border-2 border-yellow-400 px-4 py-1 transform -rotate-1">
-              <span className="text-yellow-400 font-bold text-sm tracking-widest uppercase">
-                ★ BOOM BAP HITS ★
-              </span>
-            </div>
+              <path d="M12 3v9.28l-2.44-2.44-1.42 1.42L12 15.12l3.86-3.86-1.42-1.42L12 12.28V3h-1zm7.5 3.5v10a2.5 2.5 0 01-2.5 2.5H7a2.5 2.5 0 01-2.5-2.5v-10A2.5 2.5 0 017 4h1.5v1.5H7a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1v-10a1 1 0 00-1-1h-1.5V4H17a2.5 2.5 0 012.5 2.5z" />
+            </svg>
           </div>
+          <h1 className="text-6xl font-black text-white mb-2 tracking-tight">
+            KARAOKE
+          </h1>
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-6">
+            DIN CARTIER
+          </h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            „Hip-hop românesc, din ăla care ne place.”
+          </p>
 
-          <p className="text-lg text-gray-300 mt-6 font-semibold tracking-wide"></p>
-
-          {/* Hip-hop style divider */}
-          <div className="flex items-center justify-center mt-6 space-x-4">
-            <div className="w-16 h-1 bg-yellow-400"></div>
-            <div className="w-4 h-4 bg-yellow-400 rotate-45"></div>
-            <div className="w-16 h-1 bg-yellow-400"></div>
+          {/* Urban divider */}
+          <div className="flex items-center justify-center mt-8 space-x-4">
+            <div className="w-12 h-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
+            <div className="w-3 h-3 bg-orange-500 rotate-45"></div>
+            <div className="w-12 h-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
           </div>
         </div>
 
-        {/* Songs Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {/* Hip-Hop Songs Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {karaokeSongs.map((song) => (
             <div
               key={song.id}
               onClick={() => handleSongSelect(song)}
-              className="group relative overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 bg-gradient-to-br from-gray-800 to-black border-2 border-gray-700 hover:border-yellow-400 shadow-2xl hover:shadow-yellow-400/25"
+              className="group relative bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden border border-gray-200 hover:border-gray-300"
             >
-              {/* Cassette tape style design */}
-              <div className="relative bg-black">
-                {/* Background Image with Urban Filter */}
-                <div
-                  className="h-48 bg-cover bg-center relative"
-                  style={{
-                    backgroundImage: `url(${song.background})`,
-                    filter: "grayscale(60%) contrast(130%) brightness(70%)",
-                  }}
-                >
-                  {/* Dark overlay with gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30 group-hover:from-black/95 transition-all duration-300" />
+              {/* Image */}
+              <div className="relative h-40 overflow-hidden">
+                <img
+                  src={song.background}
+                  alt={song.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40"></div>
 
-                  {/* Hip-hop style corner tape */}
-                  <div className="absolute top-3 left-3 w-8 h-3 bg-yellow-400 transform -rotate-12"></div>
-                  <div className="absolute top-3 right-3 w-8 h-3 bg-yellow-400 transform rotate-12"></div>
-
-                  {/* Play Button */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="bg-yellow-400 text-black rounded-none p-4 border-4 border-black shadow-lg transform group-hover:scale-110 transition-transform duration-200 rotate-45">
-                      <svg
-                        className="w-8 h-8 text-black -rotate-45"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  {/* Vinyl record style circle */}
-                  <div className="absolute bottom-3 right-3 w-8 h-8 border-2 border-yellow-400 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                {/* Simple Play Indicator */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <div className="w-12 h-12 bg-white/90 rounded-full flex items-center justify-center">
+                    <svg
+                      className="w-5 h-5 text-gray-800 ml-0.5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
                   </div>
                 </div>
 
-                {/* Song Info - Cassette label style */}
-                <div className="p-4 bg-gradient-to-r from-black via-gray-900 to-black border-t-2 border-yellow-400 relative">
-                  {/* Label tape effect */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-yellow-400"></div>
+                {/* Track Number */}
+                <div className="absolute top-3 left-3 text-white text-sm font-medium bg-black/50 px-2 py-1 rounded">
+                  #{song.id}
+                </div>
+              </div>
 
-                  <h3
-                    className="text-lg font-black text-white mb-1 line-clamp-2 tracking-wide uppercase"
-                    style={{
-                      fontFamily: "Arial Black, Impact, sans-serif",
-                      textShadow: "2px 2px 0px #000",
-                    }}
-                  >
-                    {song.title}
-                  </h3>
-                  <p className="text-yellow-400 text-sm font-bold tracking-wider uppercase border-l-2 border-yellow-400 pl-2">
-                    {song.artist}
-                  </p>
+              {/* Content */}
+              <div className="p-4">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1 truncate">
+                      {song.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-1 truncate">
+                      {song.artist}
+                    </p>
+                    <p className="text-gray-500 text-xs">
+                      Hip-Hop • {song.duration}
+                    </p>
+                  </div>
+                </div>
 
-                  {/* Equalizer bars animation */}
-                  <div className="flex items-end space-x-1 mt-3 h-4">
-                    {[...Array(8)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="bg-yellow-400 w-1 rounded-sm group-hover:animate-pulse"
-                        style={{
-                          height: `${Math.random() * 16 + 4}px`,
-                          animationDelay: `${i * 0.1}s`,
-                        }}
-                      ></div>
-                    ))}
+                {/* Simple Status */}
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                  <span className="text-xs text-gray-500 flex items-center"></span>
+                  <div className="text-orange-600 text-sm font-medium">
+                    Cântă
                   </div>
                 </div>
               </div>
@@ -209,14 +174,17 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Add More Tracks Button */}
+        {/* Add More Button */}
         <div className="text-center mt-12">
-          <button
-            className="relative bg-black border-4 border-yellow-400 hover:bg-yellow-400 hover:text-black text-yellow-400 font-black py-4 px-12 transition-all duration-300 transform hover:scale-105 shadow-2xl uppercase tracking-wider text-lg"
-            style={{ fontFamily: "Arial Black, Impact, sans-serif" }}
-          >
-            <span className="relative z-10">+ Drop More Beats</span>
-            <div className="absolute top-1 left-1 right-1 bottom-1 border border-gray-600"></div>
+          <button className="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors duration-200">
+            <svg
+              className="w-4 h-4 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+            </svg>
+            Vezi mai multe piese
           </button>
         </div>
       </div>
