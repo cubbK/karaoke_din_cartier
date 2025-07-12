@@ -1,766 +1,766 @@
 {
-    "result": [
-        {
-            "start": 0.0,
-            "end": 4.0,
-            "text": " Nubi",
-            "correct_lyric": ""
-        },
-        {
-            "start": 4.0,
-            "end": 8.0,
-            "text": " Nubi",
-            "correct_lyric": ""
-        },
-        {
-            "start": 8.0,
-            "end": 10.0,
-            "text": " Nubi",
-            "correct_lyric": ""
-        },
-        {
-            "start": 10.0,
-            "end": 12.0,
-            "text": " Nubi",
-            "correct_lyric": ""
-        },
-        {
-            "start": 12.0,
-            "end": 14.0,
-            "text": " Nubi",
-            "correct_lyric": ""
-        },
-        {
-            "start": 14.0,
-            "end": 16.0,
-            "text": " Nubi",
-            "correct_lyric": ""
-        },
-        {
-            "start": 16.0,
-            "end": 18.0,
-            "text": " Nubi",
-            "correct_lyric": ""
-        },
-        {
-            "start": 18.0,
-            "end": 22.0,
-            "text": " Am în minte acum vremurile de început",
-            "correct_lyric": "Am in minte acum vremurile de-nceput"
-        },
-        {
-            "start": 22.0,
-            "end": 24.0,
-            "text": " Cand ma gândeam cum sa fac bani",
-            "correct_lyric": "Cand ma gandeam cum sa fac bani"
-        },
-        {
-            "start": 24.0,
-            "end": 26.0,
-            "text": " Ce e de făcut cu tovarăși filmei",
-            "correct_lyric": "ce e de facut Cu tovarasii mei"
-        },
-        {
-            "start": 26.0,
-            "end": 28.0,
-            "text": " Săteam si ne-ntrebam oare muzica asta",
-            "correct_lyric": "stateam si ne-ntrebam Oare muzica asta"
-        },
-        {
-            "start": 28.0,
-            "end": 29.72,
-            "text": " Asta o să ne aducă niște bani",
-            "correct_lyric": "o sa ne-aduca niste bani"
-        },
-        {
-            "start": 29.72,
-            "end": 32.02,
-            "text": " Am încercat multe feluri de-a o face",
-            "correct_lyric": "Am incercat multe feluri de-a o face"
-        },
-        {
-            "start": 32.02,
-            "end": 34.8,
-            "text": " Și până la urmă am pot în râd să facem ce ne place",
-            "correct_lyric": "Si pana la urma am hotarat sa facem Ce ne place"
-        },
-        {
-            "start": 34.8,
-            "end": 37.36,
-            "text": " Am fi putut foarte ușor să facem un stilu american",
-            "correct_lyric": "Ar fi usor poate s-o facem in stilu american"
-        },
-        {
-            "start": 37.36,
-            "end": 39.78,
-            "text": " Dar la noi acasă e stilu sălășean",
-            "correct_lyric": "Da la noi acasa e stilul salajan"
-        },
-        {
-            "start": 39.78,
-            "end": 42.84,
-            "text": " Manager, impresor, producător când ai suceo vorbesc frumos",
-            "correct_lyric": "Manageri, impresari, proucatori Cand ai succes vorbesc frumos"
-        },
-        {
-            "start": 42.84,
-            "end": 44.760000000000005,
-            "text": " Despre-ncredere zâmbesc periculos",
-            "correct_lyric": "Despre incredere zambesc periculos"
-        },
-        {
-            "start": 44.760000000000005,
-            "end": 47.5,
-            "text": " Ceva nou pentru unul de pe stradă",
-            "correct_lyric": "Ceva nou pentru unu de pe strada"
-        },
-        {
-            "start": 47.5,
-            "end": 49.900000000000006,
-            "text": " Pentru care să vândă m-ar fărea singura șansă",
-            "correct_lyric": "Pentru care sa vanda marfa era singura sansa"
-        },
-        {
-            "start": 49.900000000000006,
-            "end": 52.72,
-            "text": " Dacă nu știi cum să treabă alții profite de pe urma ta",
-            "correct_lyric": "Daca nu sti cum sta treaba Altii profita de pe urma ta"
-        },
-        {
-            "start": 52.72,
-            "end": 54.92,
-            "text": " Fiindcă ești bagabon, nu ești cineva",
-            "correct_lyric": "Fiindca esti vagabond nu esti cineva"
-        },
-        {
-            "start": 54.92,
-            "end": 58.08,
-            "text": " Am adus strada în mijlocul vedețelor de prima mai",
-            "correct_lyric": "Am adus strada In mijlocul vedetelor de tip mamaia"
-        },
-        {
-            "start": 58.08,
-            "end": 60.54,
-            "text": " Am fost periat, nu știau, oare e adevărat?",
-            "correct_lyric": "S-au speriat, nu stiau oare e adevarat"
-        },
-        {
-            "start": 60.620000000000005,
-            "end": 62.24,
-            "text": " Ce dracu e cu bagabonții ăștia?",
-            "correct_lyric": "Ce dracu e cu bagabontii astia"
-        },
-        {
-            "start": 62.36,
-            "end": 65.26,
-            "text": " Îmbrăcați ciudat, pămâși în carăuri, pantaloni, ca chi de fapt",
-            "correct_lyric": "imbracati ciudat Camasi in carouri, pantaloni kaki de fapt"
-        },
-        {
-            "start": 65.26,
-            "end": 67.1,
-            "text": " În loc de șlagăre, obosite",
-            "correct_lyric": "In loc de slagare obosite"
-        },
-        {
-            "start": 67.1,
-            "end": 69.84,
-            "text": " Le-am adus hit-uri, cum bagabon tu simte?",
-            "correct_lyric": "Le-am adus hituri cum vagabondu simte"
-        },
-        {
-            "start": 69.92,
-            "end": 72.52000000000001,
-            "text": " Deodată s-a întâmplat ceva, nu știu, stresul e de vină",
-            "correct_lyric": "Deodata s-a intamplat ceva Nu stiu stresu e de vina"
-        },
-        {
-            "start": 72.52000000000001,
-            "end": 74.8,
-            "text": " Și ultimul refugiu l-am găsit în heroină",
-            "correct_lyric": "Si ultimu refugiu l-am gasit in h*****a"
-        },
-        {
-            "start": 74.8,
-            "end": 77.38,
-            "text": " Îmi pare rău că s-a întâmplat așa, asta-i viața",
-            "correct_lyric": "Imi pare rau ca s-a intamplat asa Asta-i viata"
-        },
-        {
-            "start": 77.38,
-            "end": 79.86,
-            "text": " Fratele meu cu ea, mi-a redat speranța",
-            "correct_lyric": "Fratele meu Puya mi-a redat speranta"
-        },
-        {
-            "start": 79.86,
-            "end": 82.76,
-            "text": " Am înțeles că vii sunt la droguri, am uitat să mai visez",
-            "correct_lyric": "Am inteles ca visand la droguri Am uitat sa mai visez"
-        },
-        {
-            "start": 82.76,
-            "end": 85.9,
-            "text": " Știu că bagabonți acasă așteaptă să ransez un nou album",
-            "correct_lyric": "Stiu ca vagabontii acasa asteapta sa lansez Un nou album"
-        },
-        {
-            "start": 85.9,
-            "end": 89.86,
-            "text": " Nu ui dezamăgesc și ne-am întors pentru că îmi place să trăiesc",
-            "correct_lyric": "nu ii dezamagesc Si ne-am intors pentru ca imi place sa traiesc"
-        },
-        {
-            "start": 89.86,
-            "end": 92.0,
-            "text": " Poate nu am fost destul de tare",
-            "correct_lyric": "Poate nu am fost destul de tare"
-        },
-        {
-            "start": 92.0,
-            "end": 95.64,
-            "text": " Nu mi-e rușine să o spun, am fost trăiat pe heroină frățioare",
-            "correct_lyric": "Nu mi-e rusine sa o spun Am fost 3 ani pe h*****a fratioare"
-        },
-        {
-            "start": 95.64,
-            "end": 97.82,
-            "text": " Știi că m-am lăsat, nu campania antidrog",
-            "correct_lyric": "Si cand m-am lasat, nu campania antidrog m-a convins"
-        },
-        {
-            "start": 97.82,
-            "end": 100.02,
-            "text": " M-a convins, dar simțeam că ar mai fi ceva de zis",
-            "correct_lyric": "Dati-mi teapa, c-ar mai fi ceva de zis."
-        },
-        {
-            "start": 100.02,
-            "end": 102.52,
-            "text": " Așa cum e, am făcut ce trebuia",
-            "correct_lyric": "Asa cum e am facut ce trebuia"
-        },
-        {
-            "start": 102.52,
-            "end": 104.88,
-            "text": " N-am ținut, că-mi de regulă am rămas la fel",
-            "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
-        },
-        {
-            "start": 104.88,
-            "end": 109.32,
-            "text": " La fel pentru catier și pentru muzica de stradă care ne-a scos din el",
-            "correct_lyric": "La fel pentru cartier Si pentru muzica de strada care Ne-a scos din el"
-        },
-        {
-            "start": 109.32,
-            "end": 112.5,
-            "text": " Așa cum e, am făcut ce trebuia",
-            "correct_lyric": "Asa cum e am facut ce trebuia"
-        },
-        {
-            "start": 112.5,
-            "end": 114.86,
-            "text": " N-am ținut, că-mi de regulă am rămas la fel",
-            "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
-        },
-        {
-            "start": 114.86,
-            "end": 119.28,
-            "text": " La fel pentru catier și pentru muzica de stradă care ne-a scos din el",
-            "correct_lyric": "La fel pentru cartier Si pentru muzica de strada care Ne-a scos din el"
-        },
-        {
-            "start": 119.28,
-            "end": 122.39999999999999,
-            "text": " Am început de jos, am avut speranță",
-            "correct_lyric": "Am inceput de jos am avut speranta"
-        },
-        {
-            "start": 122.39999999999999,
-            "end": 124.96,
-            "text": " Cu tupeu te borfos și am ieșit în față",
-            "correct_lyric": "Cu tupeu de borfas am iesit in fata"
-        },
-        {
-            "start": 124.96,
-            "end": 127.96,
-            "text": " Drumul care a urmat nu a fost, nu a fost cu bani",
-            "correct_lyric": "Drumul care a urmat nu a fost pavat cu bani"
-        },
-        {
-            "start": 127.96,
-            "end": 129.82,
-            "text": " Și din cartier nu am scăpat",
-            "correct_lyric": "Si din cartier nu am scapat"
-        },
-        {
-            "start": 129.82,
-            "end": 132.12,
-            "text": " Ce am câștigat mai târziu s-a dus",
-            "correct_lyric": "Ce am castigat mai tarziu s-a dus"
-        },
-        {
-            "start": 132.12,
-            "end": 135.23999999999998,
-            "text": " Ce a trebuit să înșel, să fur, să stau în stres",
-            "correct_lyric": "Si a trebuit sa insel sa fur sa stau in stres"
-        },
-        {
-            "start": 135.23999999999998,
-            "end": 137.62,
-            "text": " Dar nu mă tem încă bag, grime pe beat",
-            "correct_lyric": "Da nu ma tem inca bag rima pe beat"
-        },
-        {
-            "start": 137.62,
-            "end": 140.2,
-            "text": " Că lumea tot mă întreabă de ce nu mă spatez nimic",
-            "correct_lyric": "Ca lumea tot ma intreaba De ce nu mai scoateti nimic"
-        },
-        {
-            "start": 140.2,
-            "end": 143.4,
-            "text": " Trebuie să zic ceva, trebuie să-mi vând caseta",
-            "correct_lyric": "Trebuie sa zic ceva Trebuie sa-mi vand caseta"
-        },
-        {
-            "start": 143.4,
-            "end": 145.16,
-            "text": " Să fiu tot eu puia",
-            "correct_lyric": "Sa fiu tot eu Puya"
-        },
-        {
-            "start": 145.16,
-            "end": 147.62,
-            "text": " Nu muzica împărât în goana după bani",
-            "correct_lyric": "Nu in muzica m-am parat in goana dupa bani"
-        },
-        {
-            "start": 147.62,
-            "end": 150.35999999999999,
-            "text": " Să mă fut pe respectul câștigat în cinci ani",
-            "correct_lyric": "Sa ma f*t pe respectu castigat in cinci ani"
-        },
-        {
-            "start": 150.35999999999999,
-            "end": 152.95999999999998,
-            "text": " Inspirația nu s-a dus subiecte, sunt destule",
-            "correct_lyric": "Inspiratia nu s-a dus subiecte sunt destule"
-        },
-        {
-            "start": 152.95999999999998,
-            "end": 155.51999999999998,
-            "text": " Stilul bagabunților are versuri dure",
-            "correct_lyric": "Stilu bagabontilor are versuri dure"
-        },
-        {
-            "start": 155.51999999999998,
-            "end": 157.84,
-            "text": " Că nu e doar că aia târfele îmi se dea din cur",
-            "correct_lyric": "Ca n-o fac doar ca tarfele sa dea din cur"
-        },
-        {
-            "start": 157.84,
-            "end": 160.02,
-            "text": " Și puștigat să-i simtă bine că în jur",
-            "correct_lyric": "Si pustii sa se simta bine ca injur."
-        },
-        {
-            "start": 160.02,
-            "end": 162.5,
-            "text": " Așa cum e, am făcut ce trebuia",
-            "correct_lyric": "Asa cum e am facut ce trebuia"
-        },
-        {
-            "start": 162.5,
-            "end": 164.86,
-            "text": " N-am ținut cum de regulă am rămas la fel",
-            "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
-        },
-        {
-            "start": 164.86,
-            "end": 168.08,
-            "text": " La fel pentru catieri și pentru muzica de stradă",
-            "correct_lyric": "La fel pentru cartier Si pentru muzica de strada"
-        },
-        {
-            "start": 168.08,
-            "end": 169.32,
-            "text": " Care ne-a scos din el",
-            "correct_lyric": "care Ne-a scos din el"
-        },
-        {
-            "start": 169.32,
-            "end": 172.5,
-            "text": " Așa cum e, am făcut ce trebuia",
-            "correct_lyric": "Asa cum e am facut ce trebuia"
-        },
-        {
-            "start": 172.5,
-            "end": 174.88,
-            "text": " N-am ținut cum de regulă am rămas la fel",
-            "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
-        },
-        {
-            "start": 174.88,
-            "end": 178.08,
-            "text": " La fel pentru catieri și pentru muzica de stradă",
-            "correct_lyric": "La fel pentru cartier Si pentru muzica de strada"
-        },
-        {
-            "start": 178.08,
-            "end": 179.28,
-            "text": " Care ne-a scos din el",
-            "correct_lyric": "care Ne-a scos din el"
-        },
-        {
-            "start": 179.28,
-            "end": 182.76,
-            "text": " Fraierii încă se luptă să-o povedească",
-            "correct_lyric": "Fraierii inca se lupta sa dovedeasca"
-        },
-        {
-            "start": 182.76,
-            "end": 184.84,
-            "text": " Care-i underground, care-i comercial",
-            "correct_lyric": "Care-i underground care e comercial"
-        },
-        {
-            "start": 184.84,
-            "end": 187.9,
-            "text": " Care-i adevărat, cine trebuie respectat",
-            "correct_lyric": "Care e adevarat Cine trebuie respectat"
-        },
-        {
-            "start": 187.9,
-            "end": 190.08,
-            "text": " Însă de fapt suntem toți într-un căcat",
-            "correct_lyric": "Insa de fapt Suntem toti intr-un c***t"
-        },
-        {
-            "start": 190.08,
-            "end": 192.70000000000002,
-            "text": " Imaginea noastră de bă, e zrei e de vină",
-            "correct_lyric": "Imaginea noastra de baieti rai e de vina"
-        },
-        {
-            "start": 192.70000000000002,
-            "end": 195.26,
-            "text": " Te gândesc că suntem inculți, prost crescuți",
-            "correct_lyric": "Te gandesti ca suntem inculti si prost crescuti"
-        },
-        {
-            "start": 195.26,
-            "end": 197.6,
-            "text": " La fel ca și cei care ne ascultă, nu?",
-            "correct_lyric": "La fel ca si cei care ne asculta, nu?"
-        },
-        {
-            "start": 197.88,
-            "end": 200.04,
-            "text": " Suntem bagabuți de care te fermi și tu",
-            "correct_lyric": "Suntem bagabonti de care te feresti si tu"
-        },
-        {
-            "start": 200.04,
-            "end": 202.82,
-            "text": " Am fost prifit cu neîncredere de familie",
-            "correct_lyric": "Am fost privit cu neincredere de familie"
-        },
-        {
-            "start": 202.82,
-            "end": 204.94,
-            "text": " Îmi spunea, cum vorbești așa, boiatule?",
-            "correct_lyric": "Imi spuneau: cum vorbesti asa baiatule"
-        },
-        {
-            "start": 205.32,
-            "end": 206.7,
-            "text": " Așa ai fost învățat?",
-            "correct_lyric": "Asa ai fost invatat?"
-        },
-        {
-            "start": 207.3,
-            "end": 207.52,
-            "text": " Nu!",
-            "correct_lyric": "Nu,"
-        },
-        {
-            "start": 207.92000000000002,
-            "end": 209.78,
-            "text": " Însă femurile sunt prea de căcat",
-            "correct_lyric": "insa vremurile sunt prea de c***t"
-        },
-        {
-            "start": 209.78,
-            "end": 212.58,
-            "text": " Generația pe care o reprezintă ascultă rap",
-            "correct_lyric": "Generatia pe care-o reprezint asculta rap"
-        },
-        {
-            "start": 212.58,
-            "end": 215.06,
-            "text": " Nu folcă, l-a expirat cu haidu-ci eroi",
-            "correct_lyric": "Un folk de-ala expirat cu haiducii eroi"
-        },
-        {
-            "start": 215.06,
-            "end": 217.1,
-            "text": " Acum după blocurie război",
-            "correct_lyric": "Acum dupa blocuri e razboi"
-        },
-        {
-            "start": 217.1,
-            "end": 219.6,
-            "text": " Ce știți voi? Cum e să trăiești ca nou?",
-            "correct_lyric": "Ce stiti voi cum e sa traiesti ca noi?"
-        },
-        {
-            "start": 219.9,
-            "end": 222.52,
-            "text": " Așa cum e, am făcut ce trebuia",
-            "correct_lyric": "Asa cum e am facut ce trebuia"
-        },
-        {
-            "start": 222.52,
-            "end": 224.9,
-            "text": " N-am ținut cum de regulă am rămas la fel",
-            "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
-        },
-        {
-            "start": 224.9,
-            "end": 227.44,
-            "text": " La fel pentru catier și pentru muzica",
-            "correct_lyric": "La fel pentru cartier Si pentru muzica"
-        },
-        {
-            "start": 227.44,
-            "end": 229.38,
-            "text": " De stradă care ne-a scos din el",
-            "correct_lyric": "de strada care Ne-a scos din el"
-        },
-        {
-            "start": 229.38,
-            "end": 232.48,
-            "text": " Așa cum e, am făcut ce trebuia",
-            "correct_lyric": "Asa cum e am facut ce trebuia"
-        },
-        {
-            "start": 232.48,
-            "end": 234.92,
-            "text": " N-am ținut cum de regulă am rămas la fel",
-            "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
-        },
-        {
-            "start": 234.92,
-            "end": 237.48,
-            "text": " La fel pentru catier și pentru muzica",
-            "correct_lyric": "La fel pentru cartier Si pentru muzica"
-        },
-        {
-            "start": 237.48,
-            "end": 239.34,
-            "text": " De stradă care ne-a scos din el",
-            "correct_lyric": "de strada care Ne-a scos din el"
-        },
-        {
-            "start": 239.34,
-            "end": 239.57999999999998,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 239.57999999999998,
-            "end": 240.07999999999998,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 244.07999999999998,
-            "end": 244.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 244.48,
-            "end": 244.78,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 244.78,
-            "end": 245.28,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 245.28,
-            "end": 245.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 245.48,
-            "end": 245.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 245.98,
-            "end": 246.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 246.48,
-            "end": 246.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 246.98,
-            "end": 247.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 247.48,
-            "end": 247.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 247.98,
-            "end": 248.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 248.48,
-            "end": 248.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 248.98,
-            "end": 249.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 249.48,
-            "end": 249.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 249.98,
-            "end": 250.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 250.48,
-            "end": 250.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 250.98,
-            "end": 251.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 251.48,
-            "end": 251.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 251.98,
-            "end": 252.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 252.48,
-            "end": 253.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 253.48,
-            "end": 253.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 253.98,
-            "end": 254.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 254.48,
-            "end": 254.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 254.98,
-            "end": 255.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 255.48,
-            "end": 255.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 255.98,
-            "end": 256.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 256.48,
-            "end": 256.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 256.98,
-            "end": 257.48,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 257.48,
-            "end": 257.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 257.98,
-            "end": 258.98,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 258.98,
-            "end": 259.36,
-            "text": " Nu!",
-            "correct_lyric": ""
-        },
-        {
-            "start": 259.36,
-            "end": 259.86,
-            "text": " Nu!",
-            "correct_lyric": ""
-        }
-    ]
+  "result": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Nubi",
+      "correct_lyric": ""
+    },
+    {
+      "start": 4.0,
+      "end": 8.0,
+      "text": " Nubi",
+      "correct_lyric": ""
+    },
+    {
+      "start": 8.0,
+      "end": 10.0,
+      "text": " Nubi",
+      "correct_lyric": ""
+    },
+    {
+      "start": 10.0,
+      "end": 12.0,
+      "text": " Nubi",
+      "correct_lyric": ""
+    },
+    {
+      "start": 12.0,
+      "end": 14.0,
+      "text": " Nubi",
+      "correct_lyric": ""
+    },
+    {
+      "start": 14.0,
+      "end": 16.0,
+      "text": " Nubi",
+      "correct_lyric": ""
+    },
+    {
+      "start": 16.0,
+      "end": 18.0,
+      "text": " Nubi",
+      "correct_lyric": ""
+    },
+    {
+      "start": 19.5,
+      "end": 22.0,
+      "text": " Am în minte acum vremurile de început",
+      "correct_lyric": "Am in minte acum vremurile de-nceput"
+    },
+    {
+      "start": 22.0,
+      "end": 24.0,
+      "text": " Cand ma gândeam cum sa fac bani",
+      "correct_lyric": "Cand ma gandeam cum sa fac bani"
+    },
+    {
+      "start": 24.0,
+      "end": 26.0,
+      "text": " Ce e de făcut cu tovarăși filmei",
+      "correct_lyric": "ce e de facut Cu tovarasii mei"
+    },
+    {
+      "start": 26.0,
+      "end": 28.0,
+      "text": " Săteam si ne-ntrebam oare muzica asta",
+      "correct_lyric": "stateam si ne-ntrebam Oare muzica asta"
+    },
+    {
+      "start": 28.0,
+      "end": 29.72,
+      "text": " Asta o să ne aducă niște bani",
+      "correct_lyric": "o sa ne-aduca niste bani"
+    },
+    {
+      "start": 29.72,
+      "end": 32.02,
+      "text": " Am încercat multe feluri de-a o face",
+      "correct_lyric": "Am incercat multe feluri de-a o face"
+    },
+    {
+      "start": 32.02,
+      "end": 34.8,
+      "text": " Și până la urmă am pot în râd să facem ce ne place",
+      "correct_lyric": "Si pana la urma am hotarat sa facem Ce ne place"
+    },
+    {
+      "start": 34.8,
+      "end": 37.36,
+      "text": " Am fi putut foarte ușor să facem un stilu american",
+      "correct_lyric": "Ar fi usor poate s-o facem in stilu american"
+    },
+    {
+      "start": 37.36,
+      "end": 39.78,
+      "text": " Dar la noi acasă e stilu sălășean",
+      "correct_lyric": "Da la noi acasa e stilul salajan"
+    },
+    {
+      "start": 39.78,
+      "end": 42.84,
+      "text": " Manager, impresor, producător când ai suceo vorbesc frumos",
+      "correct_lyric": "Manageri, impresari, proucatori Cand ai succes vorbesc frumos"
+    },
+    {
+      "start": 42.84,
+      "end": 44.760000000000005,
+      "text": " Despre-ncredere zâmbesc periculos",
+      "correct_lyric": "Despre incredere zambesc periculos"
+    },
+    {
+      "start": 44.760000000000005,
+      "end": 47.5,
+      "text": " Ceva nou pentru unul de pe stradă",
+      "correct_lyric": "Ceva nou pentru unu de pe strada"
+    },
+    {
+      "start": 47.5,
+      "end": 49.900000000000006,
+      "text": " Pentru care să vândă m-ar fărea singura șansă",
+      "correct_lyric": "Pentru care sa vanda marfa era singura sansa"
+    },
+    {
+      "start": 49.900000000000006,
+      "end": 52.72,
+      "text": " Dacă nu știi cum să treabă alții profite de pe urma ta",
+      "correct_lyric": "Daca nu sti cum sta treaba Altii profita de pe urma ta"
+    },
+    {
+      "start": 52.72,
+      "end": 54.92,
+      "text": " Fiindcă ești bagabon, nu ești cineva",
+      "correct_lyric": "Fiindca esti vagabond nu esti cineva"
+    },
+    {
+      "start": 54.92,
+      "end": 58.08,
+      "text": " Am adus strada în mijlocul vedețelor de prima mai",
+      "correct_lyric": "Am adus strada In mijlocul vedetelor de tip mamaia"
+    },
+    {
+      "start": 58.08,
+      "end": 60.54,
+      "text": " Am fost periat, nu știau, oare e adevărat?",
+      "correct_lyric": "S-au speriat, nu stiau oare e adevarat"
+    },
+    {
+      "start": 60.620000000000005,
+      "end": 62.24,
+      "text": " Ce dracu e cu bagabonții ăștia?",
+      "correct_lyric": "Ce dracu e cu bagabontii astia"
+    },
+    {
+      "start": 62.36,
+      "end": 65.26,
+      "text": " Îmbrăcați ciudat, pămâși în carăuri, pantaloni, ca chi de fapt",
+      "correct_lyric": "imbracati ciudat Camasi in carouri, pantaloni kaki de fapt"
+    },
+    {
+      "start": 65.26,
+      "end": 67.1,
+      "text": " În loc de șlagăre, obosite",
+      "correct_lyric": "In loc de slagare obosite"
+    },
+    {
+      "start": 67.1,
+      "end": 69.84,
+      "text": " Le-am adus hit-uri, cum bagabon tu simte?",
+      "correct_lyric": "Le-am adus hituri cum vagabondu simte"
+    },
+    {
+      "start": 69.92,
+      "end": 72.52000000000001,
+      "text": " Deodată s-a întâmplat ceva, nu știu, stresul e de vină",
+      "correct_lyric": "Deodata s-a intamplat ceva Nu stiu stresu e de vina"
+    },
+    {
+      "start": 72.52000000000001,
+      "end": 74.8,
+      "text": " Și ultimul refugiu l-am găsit în heroină",
+      "correct_lyric": "Si ultimu refugiu l-am gasit in h*****a"
+    },
+    {
+      "start": 74.8,
+      "end": 77.38,
+      "text": " Îmi pare rău că s-a întâmplat așa, asta-i viața",
+      "correct_lyric": "Imi pare rau ca s-a intamplat asa Asta-i viata"
+    },
+    {
+      "start": 77.38,
+      "end": 79.86,
+      "text": " Fratele meu cu ea, mi-a redat speranța",
+      "correct_lyric": "Fratele meu Puya mi-a redat speranta"
+    },
+    {
+      "start": 79.86,
+      "end": 82.76,
+      "text": " Am înțeles că vii sunt la droguri, am uitat să mai visez",
+      "correct_lyric": "Am inteles ca visand la droguri Am uitat sa mai visez"
+    },
+    {
+      "start": 82.76,
+      "end": 85.9,
+      "text": " Știu că bagabonți acasă așteaptă să ransez un nou album",
+      "correct_lyric": "Stiu ca vagabontii acasa asteapta sa lansez Un nou album"
+    },
+    {
+      "start": 85.9,
+      "end": 89.86,
+      "text": " Nu ui dezamăgesc și ne-am întors pentru că îmi place să trăiesc",
+      "correct_lyric": "nu ii dezamagesc Si ne-am intors pentru ca imi place sa traiesc"
+    },
+    {
+      "start": 89.86,
+      "end": 92.0,
+      "text": " Poate nu am fost destul de tare",
+      "correct_lyric": "Poate nu am fost destul de tare"
+    },
+    {
+      "start": 92.0,
+      "end": 95.64,
+      "text": " Nu mi-e rușine să o spun, am fost trăiat pe heroină frățioare",
+      "correct_lyric": "Nu mi-e rusine sa o spun Am fost 3 ani pe h*****a fratioare"
+    },
+    {
+      "start": 95.64,
+      "end": 97.82,
+      "text": " Știi că m-am lăsat, nu campania antidrog",
+      "correct_lyric": "Si cand m-am lasat, nu campania antidrog m-a convins"
+    },
+    {
+      "start": 97.82,
+      "end": 100.02,
+      "text": " M-a convins, dar simțeam că ar mai fi ceva de zis",
+      "correct_lyric": "Dati-mi teapa, c-ar mai fi ceva de zis."
+    },
+    {
+      "start": 100.02,
+      "end": 102.52,
+      "text": " Așa cum e, am făcut ce trebuia",
+      "correct_lyric": "Asa cum e am facut ce trebuia"
+    },
+    {
+      "start": 102.52,
+      "end": 104.88,
+      "text": " N-am ținut, că-mi de regulă am rămas la fel",
+      "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
+    },
+    {
+      "start": 104.88,
+      "end": 109.32,
+      "text": " La fel pentru catier și pentru muzica de stradă care ne-a scos din el",
+      "correct_lyric": "La fel pentru cartier Si pentru muzica de strada care Ne-a scos din el"
+    },
+    {
+      "start": 109.32,
+      "end": 112.5,
+      "text": " Așa cum e, am făcut ce trebuia",
+      "correct_lyric": "Asa cum e am facut ce trebuia"
+    },
+    {
+      "start": 112.5,
+      "end": 114.86,
+      "text": " N-am ținut, că-mi de regulă am rămas la fel",
+      "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
+    },
+    {
+      "start": 114.86,
+      "end": 119.28,
+      "text": " La fel pentru catier și pentru muzica de stradă care ne-a scos din el",
+      "correct_lyric": "La fel pentru cartier Si pentru muzica de strada care Ne-a scos din el"
+    },
+    {
+      "start": 119.28,
+      "end": 122.39999999999999,
+      "text": " Am început de jos, am avut speranță",
+      "correct_lyric": "Am inceput de jos am avut speranta"
+    },
+    {
+      "start": 122.39999999999999,
+      "end": 124.96,
+      "text": " Cu tupeu te borfos și am ieșit în față",
+      "correct_lyric": "Cu tupeu de borfas am iesit in fata"
+    },
+    {
+      "start": 124.96,
+      "end": 127.96,
+      "text": " Drumul care a urmat nu a fost, nu a fost cu bani",
+      "correct_lyric": "Drumul care a urmat nu a fost pavat cu bani"
+    },
+    {
+      "start": 127.96,
+      "end": 129.82,
+      "text": " Și din cartier nu am scăpat",
+      "correct_lyric": "Si din cartier nu am scapat"
+    },
+    {
+      "start": 129.82,
+      "end": 132.12,
+      "text": " Ce am câștigat mai târziu s-a dus",
+      "correct_lyric": "Ce am castigat mai tarziu s-a dus"
+    },
+    {
+      "start": 132.12,
+      "end": 135.23999999999998,
+      "text": " Ce a trebuit să înșel, să fur, să stau în stres",
+      "correct_lyric": "Si a trebuit sa insel sa fur sa stau in stres"
+    },
+    {
+      "start": 135.23999999999998,
+      "end": 137.62,
+      "text": " Dar nu mă tem încă bag, grime pe beat",
+      "correct_lyric": "Da nu ma tem inca bag rima pe beat"
+    },
+    {
+      "start": 137.62,
+      "end": 140.2,
+      "text": " Că lumea tot mă întreabă de ce nu mă spatez nimic",
+      "correct_lyric": "Ca lumea tot ma intreaba De ce nu mai scoateti nimic"
+    },
+    {
+      "start": 140.2,
+      "end": 143.4,
+      "text": " Trebuie să zic ceva, trebuie să-mi vând caseta",
+      "correct_lyric": "Trebuie sa zic ceva Trebuie sa-mi vand caseta"
+    },
+    {
+      "start": 143.4,
+      "end": 145.16,
+      "text": " Să fiu tot eu puia",
+      "correct_lyric": "Sa fiu tot eu Puya"
+    },
+    {
+      "start": 145.16,
+      "end": 147.62,
+      "text": " Nu muzica împărât în goana după bani",
+      "correct_lyric": "Nu in muzica m-am parat in goana dupa bani"
+    },
+    {
+      "start": 147.62,
+      "end": 150.35999999999999,
+      "text": " Să mă fut pe respectul câștigat în cinci ani",
+      "correct_lyric": "Sa ma f*t pe respectu castigat in cinci ani"
+    },
+    {
+      "start": 150.35999999999999,
+      "end": 152.95999999999998,
+      "text": " Inspirația nu s-a dus subiecte, sunt destule",
+      "correct_lyric": "Inspiratia nu s-a dus subiecte sunt destule"
+    },
+    {
+      "start": 152.95999999999998,
+      "end": 155.51999999999998,
+      "text": " Stilul bagabunților are versuri dure",
+      "correct_lyric": "Stilu bagabontilor are versuri dure"
+    },
+    {
+      "start": 155.51999999999998,
+      "end": 157.84,
+      "text": " Că nu e doar că aia târfele îmi se dea din cur",
+      "correct_lyric": "Ca n-o fac doar ca tarfele sa dea din cur"
+    },
+    {
+      "start": 157.84,
+      "end": 160.02,
+      "text": " Și puștigat să-i simtă bine că în jur",
+      "correct_lyric": "Si pustii sa se simta bine ca injur."
+    },
+    {
+      "start": 160.02,
+      "end": 162.5,
+      "text": " Așa cum e, am făcut ce trebuia",
+      "correct_lyric": "Asa cum e am facut ce trebuia"
+    },
+    {
+      "start": 162.5,
+      "end": 164.86,
+      "text": " N-am ținut cum de regulă am rămas la fel",
+      "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
+    },
+    {
+      "start": 164.86,
+      "end": 168.08,
+      "text": " La fel pentru catieri și pentru muzica de stradă",
+      "correct_lyric": "La fel pentru cartier Si pentru muzica de strada"
+    },
+    {
+      "start": 168.08,
+      "end": 169.32,
+      "text": " Care ne-a scos din el",
+      "correct_lyric": "care Ne-a scos din el"
+    },
+    {
+      "start": 169.32,
+      "end": 172.5,
+      "text": " Așa cum e, am făcut ce trebuia",
+      "correct_lyric": "Asa cum e am facut ce trebuia"
+    },
+    {
+      "start": 172.5,
+      "end": 174.88,
+      "text": " N-am ținut cum de regulă am rămas la fel",
+      "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
+    },
+    {
+      "start": 174.88,
+      "end": 178.08,
+      "text": " La fel pentru catieri și pentru muzica de stradă",
+      "correct_lyric": "La fel pentru cartier Si pentru muzica de strada"
+    },
+    {
+      "start": 178.08,
+      "end": 179.28,
+      "text": " Care ne-a scos din el",
+      "correct_lyric": "care Ne-a scos din el"
+    },
+    {
+      "start": 179.28,
+      "end": 182.76,
+      "text": " Fraierii încă se luptă să-o povedească",
+      "correct_lyric": "Fraierii inca se lupta sa dovedeasca"
+    },
+    {
+      "start": 182.76,
+      "end": 184.84,
+      "text": " Care-i underground, care-i comercial",
+      "correct_lyric": "Care-i underground care e comercial"
+    },
+    {
+      "start": 184.84,
+      "end": 187.9,
+      "text": " Care-i adevărat, cine trebuie respectat",
+      "correct_lyric": "Care e adevarat Cine trebuie respectat"
+    },
+    {
+      "start": 187.9,
+      "end": 190.08,
+      "text": " Însă de fapt suntem toți într-un căcat",
+      "correct_lyric": "Insa de fapt Suntem toti intr-un c***t"
+    },
+    {
+      "start": 190.08,
+      "end": 192.70000000000002,
+      "text": " Imaginea noastră de bă, e zrei e de vină",
+      "correct_lyric": "Imaginea noastra de baieti rai e de vina"
+    },
+    {
+      "start": 192.70000000000002,
+      "end": 195.26,
+      "text": " Te gândesc că suntem inculți, prost crescuți",
+      "correct_lyric": "Te gandesti ca suntem inculti si prost crescuti"
+    },
+    {
+      "start": 195.26,
+      "end": 197.6,
+      "text": " La fel ca și cei care ne ascultă, nu?",
+      "correct_lyric": "La fel ca si cei care ne asculta, nu?"
+    },
+    {
+      "start": 197.88,
+      "end": 200.04,
+      "text": " Suntem bagabuți de care te fermi și tu",
+      "correct_lyric": "Suntem bagabonti de care te feresti si tu"
+    },
+    {
+      "start": 200.04,
+      "end": 202.82,
+      "text": " Am fost prifit cu neîncredere de familie",
+      "correct_lyric": "Am fost privit cu neincredere de familie"
+    },
+    {
+      "start": 202.82,
+      "end": 204.94,
+      "text": " Îmi spunea, cum vorbești așa, boiatule?",
+      "correct_lyric": "Imi spuneau: cum vorbesti asa baiatule"
+    },
+    {
+      "start": 205.32,
+      "end": 206.7,
+      "text": " Așa ai fost învățat?",
+      "correct_lyric": "Asa ai fost invatat?"
+    },
+    {
+      "start": 207.3,
+      "end": 207.52,
+      "text": " Nu!",
+      "correct_lyric": "Nu,"
+    },
+    {
+      "start": 207.92000000000002,
+      "end": 209.78,
+      "text": " Însă femurile sunt prea de căcat",
+      "correct_lyric": "insa vremurile sunt prea de c***t"
+    },
+    {
+      "start": 209.78,
+      "end": 212.58,
+      "text": " Generația pe care o reprezintă ascultă rap",
+      "correct_lyric": "Generatia pe care-o reprezint asculta rap"
+    },
+    {
+      "start": 212.58,
+      "end": 215.06,
+      "text": " Nu folcă, l-a expirat cu haidu-ci eroi",
+      "correct_lyric": "Un folk de-ala expirat cu haiducii eroi"
+    },
+    {
+      "start": 215.06,
+      "end": 217.1,
+      "text": " Acum după blocurie război",
+      "correct_lyric": "Acum dupa blocuri e razboi"
+    },
+    {
+      "start": 217.1,
+      "end": 219.6,
+      "text": " Ce știți voi? Cum e să trăiești ca nou?",
+      "correct_lyric": "Ce stiti voi cum e sa traiesti ca noi?"
+    },
+    {
+      "start": 219.9,
+      "end": 222.52,
+      "text": " Așa cum e, am făcut ce trebuia",
+      "correct_lyric": "Asa cum e am facut ce trebuia"
+    },
+    {
+      "start": 222.52,
+      "end": 224.9,
+      "text": " N-am ținut cum de regulă am rămas la fel",
+      "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
+    },
+    {
+      "start": 224.9,
+      "end": 227.44,
+      "text": " La fel pentru catier și pentru muzica",
+      "correct_lyric": "La fel pentru cartier Si pentru muzica"
+    },
+    {
+      "start": 227.44,
+      "end": 229.38,
+      "text": " De stradă care ne-a scos din el",
+      "correct_lyric": "de strada care Ne-a scos din el"
+    },
+    {
+      "start": 229.38,
+      "end": 232.48,
+      "text": " Așa cum e, am făcut ce trebuia",
+      "correct_lyric": "Asa cum e am facut ce trebuia"
+    },
+    {
+      "start": 232.48,
+      "end": 234.92,
+      "text": " N-am ținut cum de regulă am rămas la fel",
+      "correct_lyric": "N-am tinut cont de regula Am ramas la fel"
+    },
+    {
+      "start": 234.92,
+      "end": 237.48,
+      "text": " La fel pentru catier și pentru muzica",
+      "correct_lyric": "La fel pentru cartier Si pentru muzica"
+    },
+    {
+      "start": 237.48,
+      "end": 239.34,
+      "text": " De stradă care ne-a scos din el",
+      "correct_lyric": "de strada care Ne-a scos din el"
+    },
+    {
+      "start": 239.34,
+      "end": 239.57999999999998,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 239.57999999999998,
+      "end": 240.07999999999998,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 244.07999999999998,
+      "end": 244.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 244.48,
+      "end": 244.78,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 244.78,
+      "end": 245.28,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 245.28,
+      "end": 245.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 245.48,
+      "end": 245.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 245.98,
+      "end": 246.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 246.48,
+      "end": 246.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 246.98,
+      "end": 247.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 247.48,
+      "end": 247.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 247.98,
+      "end": 248.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 248.48,
+      "end": 248.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 248.98,
+      "end": 249.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 249.48,
+      "end": 249.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 249.98,
+      "end": 250.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 250.48,
+      "end": 250.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 250.98,
+      "end": 251.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 251.48,
+      "end": 251.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 251.98,
+      "end": 252.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 252.48,
+      "end": 253.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 253.48,
+      "end": 253.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 253.98,
+      "end": 254.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 254.48,
+      "end": 254.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 254.98,
+      "end": 255.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 255.48,
+      "end": 255.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 255.98,
+      "end": 256.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 256.48,
+      "end": 256.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 256.98,
+      "end": 257.48,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 257.48,
+      "end": 257.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 257.98,
+      "end": 258.98,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 258.98,
+      "end": 259.36,
+      "text": " Nu!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 259.36,
+      "end": 259.86,
+      "text": " Nu!",
+      "correct_lyric": ""
+    }
+  ]
 }
