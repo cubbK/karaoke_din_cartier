@@ -79,10 +79,16 @@ export default function Player() {
   const [showInstrumentalTimer, setShowInstrumentalTimer] = useState(false);
 
   // Filter transcription data to only include entries with lyrics
-  const lyricsData =
+  let lyricsData =
     transcription?.result?.filter(
       (item: any) => item.correct_lyric && item.correct_lyric.trim() !== ""
     ) || [];
+
+  lyricsData = lyricsData.map((item: any) => ({
+    ...item,
+    correct_lyric:
+      item.correct_lyric[0] + item.correct_lyric.slice(1).toLowerCase(),
+  }));
 
   // Update current time and find current lyric
   useEffect(() => {
@@ -240,13 +246,13 @@ export default function Player() {
         <div className={`mb-8 text-center ${isFullscreen ? "mb-4" : ""}`}>
           <h1
             className={`font-bold mb-2 ${
-              isFullscreen ? "text-2xl" : "text-4xl"
+              isFullscreen ? "text-2xl" : "text-2xl"
             }`}
           >
             {metadata.title}
           </h1>
           <p
-            className={`text-gray-300 ${isFullscreen ? "text-lg" : "text-xl"}`}
+            className={`text-gray-300 ${isFullscreen ? "text-xl" : "text-xl"}`}
           >
             by {metadata.artist}
           </p>
