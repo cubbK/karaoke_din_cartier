@@ -1,0 +1,508 @@
+{
+  "result": [
+    {
+      "start": 0.0,
+      "end": 2.6,
+      "text": " Că tot la bante duce fiecare drum",
+      "correct_lyric": "Că tot la bani te duce fiecare drum"
+    },
+    {
+      "start": 2.6,
+      "end": 5.26,
+      "text": " Și dacă nu iei tu pe toția altul",
+      "correct_lyric": "Și dacă nu-i iei toți îi ia altu'"
+    },
+    {
+      "start": 5.26,
+      "end": 8.6,
+      "text": " Așa că faci și tu ceva, să ai și tu ceva",
+      "correct_lyric": "Așa că fă și tu ceva, să ai și tu ceva"
+    },
+    {
+      "start": 8.6,
+      "end": 11.06,
+      "text": " Și poate va fi bine pentru familia ta",
+      "correct_lyric": "Și poate va fi bine pentru familia ta"
+    },
+    {
+      "start": 11.06,
+      "end": 13.280000000000001,
+      "text": " Că tot la bante duce fiecare drum",
+      "correct_lyric": "Că tot la bani te duce fiecare drum"
+    },
+    {
+      "start": 13.280000000000001,
+      "end": 16.4,
+      "text": " Și dacă nu iei tu pe toția altul",
+      "correct_lyric": "Și dacă nu-i iei toți îi ia altu'"
+    },
+    {
+      "start": 16.4,
+      "end": 19.26,
+      "text": " Așa că faci și tu ceva, să ai și tu ceva",
+      "correct_lyric": "Așa că fă și tu ceva, să ai și tu ceva"
+    },
+    {
+      "start": 19.26,
+      "end": 21.76,
+      "text": " Și poate va fi bine pentru familia ta",
+      "correct_lyric": "Și poate va fi bine pentru familia ta"
+    },
+    {
+      "start": 21.76,
+      "end": 24.48,
+      "text": " Sunt ș-h-o-b-b-e",
+      "correct_lyric": "Sunt S-H-O-B-B-Y"
+    },
+    {
+      "start": 24.48,
+      "end": 27.22,
+      "text": " Pentru bani în capitală ar trebui să știi",
+      "correct_lyric": "Pentru bani în capitală ar trebui să știi"
+    },
+    {
+      "start": 27.22,
+      "end": 29.86,
+      "text": " Lumea încă mă întreabă de ce nu scoate malbă",
+      "correct_lyric": "Lumea încă mă întreabă de ce nu scoatem album"
+    },
+    {
+      "start": 29.86,
+      "end": 30.939999999999998,
+      "text": " Atenție!",
+      "correct_lyric": "Atenție!"
+    },
+    {
+      "start": 31.12,
+      "end": 33.12,
+      "text": " Că deocamdată e pe drum la TV",
+      "correct_lyric": "Că deocamdată e pe drum La TV"
+    },
+    {
+      "start": 33.12,
+      "end": 35.2,
+      "text": " Domnul prezentator e la fel",
+      "correct_lyric": " domnu prezentator e la fel"
+    },
+    {
+      "start": 35.2,
+      "end": 37.86,
+      "text": " Mă întreabă de ce când muzică de cartier",
+      "correct_lyric": "Mă întreabă de ce cânt muzică de cartier"
+    },
+    {
+      "start": 37.86,
+      "end": 40.56,
+      "text": " Dar ce pula mea ar trebui să fac",
+      "correct_lyric": "Da ce pula mea ar trebui să fac"
+    },
+    {
+      "start": 40.56,
+      "end": 43.18,
+      "text": " Să când pop, dance, ca să nu fiu cenzurat",
+      "correct_lyric": "Să cânt pop dens ca să nu fiu cenzurat"
+    },
+    {
+      "start": 43.18,
+      "end": 45.8,
+      "text": " Pentru bani alerg în fiecare zi",
+      "correct_lyric": "Pentru bani, alerg, în fiecare zi"
+    },
+    {
+      "start": 45.8,
+      "end": 48.42,
+      "text": " În capitală pentru capital să știi",
+      "correct_lyric": "In capitală pentru capital să știi"
+    },
+    {
+      "start": 48.42,
+      "end": 51.06,
+      "text": " Că pentru bani o să îți dau la muie cu talent",
+      "correct_lyric": "Că pentru bani o să-ți dau la muie cu talent"
+    },
+    {
+      "start": 51.06,
+      "end": 53.760000000000005,
+      "text": " Că pentru bani ar trebui să fii mai atent",
+      "correct_lyric": "Că pentru bani ar trebui să fii mai atent"
+    },
+    {
+      "start": 53.760000000000005,
+      "end": 56.519999999999996,
+      "text": " De la ploiești prezintă pentru bani codul penal",
+      "correct_lyric": "De la Ploiești prezinta pentru bani codu penal"
+    },
+    {
+      "start": 56.519999999999996,
+      "end": 59.2,
+      "text": " Pentru toți din toată țara dăm regulamentar",
+      "correct_lyric": "Pentru toți din toată țara dăm regulamentar"
+    },
+    {
+      "start": 59.2,
+      "end": 61.86,
+      "text": " Nu contează că sunt români sau țigani",
+      "correct_lyric": "Nu contează că sînt români sau țigani"
+    },
+    {
+      "start": 61.86,
+      "end": 64.44,
+      "text": " Golani știi bine că dăm totul pentru bani",
+      "correct_lyric": "Golani știi bine că dăm totul pentru bani"
+    },
+    {
+      "start": 64.44,
+      "end": 66.60000000000001,
+      "text": " Că tot la bani te duce fiecare drum",
+      "correct_lyric": "Că tot la bani te duce fiecare drum"
+    },
+    {
+      "start": 66.60000000000001,
+      "end": 69.26,
+      "text": " Și dacă nu iei tu pe toția altul",
+      "correct_lyric": "Și dacă nu-i iei toți îi ia altu'"
+    },
+    {
+      "start": 69.26,
+      "end": 71.2,
+      "text": " Așa că fai și tu ceva",
+      "correct_lyric": "Așa că fă și tu ceva"
+    },
+    {
+      "start": 71.2,
+      "end": 72.60000000000001,
+      "text": " Să ai și tu ceva",
+      "correct_lyric": "să ai și tu ceva"
+    },
+    {
+      "start": 72.60000000000001,
+      "end": 75.06,
+      "text": " Și poate va fi bine pentru familia ta",
+      "correct_lyric": "Și poate va fi bine pentru familia ta"
+    },
+    {
+      "start": 75.06,
+      "end": 89.72,
+      "text": " Întâmplări întâmplătoare întâmplător se întâmplă pentru bani",
+      "correct_lyric": "Întâmplări întâmplătoare întâmplător se întâmplă Pentru bani "
+    },
+    {
+      "start": 89.72,
+      "end": 91.38,
+      "text": " Întâmplări o gaură întâmplă",
+      "correct_lyric": "ar fi o întâmplare o gaură în tâmplă"
+    },
+    {
+      "start": 91.38,
+      "end": 93.38,
+      "text": " N-o să-ți ajungă chiar dacă ai prea mult",
+      "correct_lyric": "N-o să ți-ajungă chiar dacă ai prea mult"
+    },
+    {
+      "start": 93.38,
+      "end": 95.03999999999999,
+      "text": " Când e vorba de bani",
+      "correct_lyric": "Când e vorba de bani"
+    },
+    {
+      "start": 95.03999999999999,
+      "end": 97.03999999999999,
+      "text": " Am școală la vieții nu sunt ful că facem bani",
+      "correct_lyric": "școala vieții nu se-ncurcă  Facem bani "
+    },
+    {
+      "start": 97.03999999999999,
+      "end": 98.61999999999999,
+      "text": " Anul ăsta treaba e sigur",
+      "correct_lyric": "anu ăsta treaba-i sigură"
+    },
+    {
+      "start": 98.62,
+      "end": 101.28,
+      "text": " La fel cum tăh-i gol din lovitură liberă",
+      "correct_lyric": "La fel cum dă Hagi din lovitură liberă"
+    },
+    {
+      "start": 101.28,
+      "end": 102.28,
+      "text": " Hei!",
+      "correct_lyric": ""
+    },
+    {
+      "start": 102.28,
+      "end": 104.28,
+      "text": " Da-te la o parte, las în spate tentele",
+      "correct_lyric": "Dă-te la o parte lasă-n spate petele"
+    },
+    {
+      "start": 104.28,
+      "end": 107.06,
+      "text": " Totu-i pentru bani, fute bani femeile",
+      "correct_lyric": "Totu-i pentru bani futem bani, femeile"
+    },
+    {
+      "start": 107.06,
+      "end": 109.82000000000001,
+      "text": " Că prea multă lume m-a oprit pe drum",
+      "correct_lyric": "Că prea multă m-a oprit pe drum"
+    },
+    {
+      "start": 109.82000000000001,
+      "end": 110.44,
+      "text": " Adică cum?",
+      "correct_lyric": "(Adică cum?)"
+    },
+    {
+      "start": 110.48,
+      "end": 112.52000000000001,
+      "text": " Și mă întreabă despre ce cânt pe album",
+      "correct_lyric": "Și mă întreabă despre ce cânt pe album"
+    },
+    {
+      "start": 112.52000000000001,
+      "end": 113.28,
+      "text": " Despre noi?",
+      "correct_lyric": "Despre noi,"
+    },
+    {
+      "start": 113.28,
+      "end": 113.56,
+      "text": " Cum?",
+      "correct_lyric": ""
+    },
+    {
+      "start": 113.92,
+      "end": 115.2,
+      "text": " Despre cum o să fie",
+      "correct_lyric": "despre cum o să fie"
+    },
+    {
+      "start": 115.2,
+      "end": 117.28,
+      "text": " Și zic totu' pentru bani să sune a șmecherie",
+      "correct_lyric": "Și zic totul pentru bani să sune a șmecherie"
+    },
+    {
+      "start": 117.28,
+      "end": 120.58000000000001,
+      "text": " Când vii de jos și te ridici puțin te mândrești",
+      "correct_lyric": "Când vii de jos și te ridici puțin te mândrești"
+    },
+    {
+      "start": 120.58000000000001,
+      "end": 123.22,
+      "text": " Când ai de ceva bani uiți repede cine ești",
+      "correct_lyric": "Când ai de ceva bani uiți repede cine ești"
+    },
+    {
+      "start": 123.22,
+      "end": 125.74000000000001,
+      "text": " Când pui mâna pe pizdă tremuri și tu și ea",
+      "correct_lyric": "Când pui mâna pe pizdă tremuri și tu și ea"
+    },
+    {
+      "start": 125.74,
+      "end": 128.42,
+      "text": " Și zic totu' pentru bani și-mi fac pula-n gura ta",
+      "correct_lyric": "Și zic totul pentru bani și bag pula-n gura ta"
+    },
+    {
+      "start": 128.42,
+      "end": 130.62,
+      "text": " Că tot la bani te duce fiecare drum",
+      "correct_lyric": "Că tot la bani te duce fiecare drum"
+    },
+    {
+      "start": 130.62,
+      "end": 133.24,
+      "text": " Și dacă nu iei tu pe toția altu'",
+      "correct_lyric": "Și dacă nu-i iei toți îi ia altu'"
+    },
+    {
+      "start": 133.72,
+      "end": 136.62,
+      "text": " Așa că fă și tu ceva, să ai și tu ceva",
+      "correct_lyric": "Așa că fă și tu ceva, să ai și tu ceva"
+    },
+    {
+      "start": 136.62,
+      "end": 139.06,
+      "text": " Și poate va fi bine pentru familia ta",
+      "correct_lyric": "Și poate va fi bine pentru familia ta"
+    },
+    {
+      "start": 139.06,
+      "end": 141.28,
+      "text": " Că tot la bani te duce fiecare drum",
+      "correct_lyric": "Că tot la bani te duce fiecare drum"
+    },
+    {
+      "start": 141.28,
+      "end": 143.92,
+      "text": " Și dacă nu iei tu pe toția altu'",
+      "correct_lyric": "Și dacă nu-i iei toți îi ia altu'"
+    },
+    {
+      "start": 144.45999999999998,
+      "end": 147.26,
+      "text": " Așa că fă și tu ceva, să ai și tu ceva",
+      "correct_lyric": "Așa că fă și tu ceva, să ai și tu ceva"
+    },
+    {
+      "start": 147.26,
+      "end": 149.95999999999998,
+      "text": " Și poate va fi bine pentru familia ta",
+      "correct_lyric": "Și poate va fi bine pentru familia ta"
+    },
+    {
+      "start": 149.95999999999998,
+      "end": 155.32,
+      "text": " Pentru că pentru bani se formează familie",
+      "correct_lyric": "Pentru că pentru bani se formează familie"
+    },
+    {
+      "start": 155.32,
+      "end": 158.0,
+      "text": " Pentru că pentru bani se destream o familie",
+      "correct_lyric": "Pentru că pentru bani se destramă familie"
+    },
+    {
+      "start": 158.0,
+      "end": 160.84,
+      "text": " Pentru că unde-s bani și târfe nu e familie",
+      "correct_lyric": "Pentru că unde-s bani și târfe nu e familie"
+    },
+    {
+      "start": 160.84,
+      "end": 163.73999999999998,
+      "text": " Pentru că îți iei țeapă ca de 1 aprilie",
+      "correct_lyric": "Pentru că îți iei țeapă ca de întâi aprilie"
+    },
+    {
+      "start": 163.73999999999998,
+      "end": 166.56,
+      "text": " Pentru că toți vorți te taie ca pe felie",
+      "correct_lyric": "Pentru că toți vor să te taie ca pe felie"
+    },
+    {
+      "start": 166.56,
+      "end": 168.79999999999998,
+      "text": " Pentru că le-ai spus la prea mulți frăție",
+      "correct_lyric": "Pentru că lea-i spus la prea mulți frăție"
+    },
+    {
+      "start": 168.79999999999998,
+      "end": 171.16,
+      "text": " Pentru că nu te-ai gândit ce o să fie",
+      "correct_lyric": "Pentru că nu te-ai gândit ce o să fie"
+    },
+    {
+      "start": 171.16,
+      "end": 174.0,
+      "text": " Când banii o să fie vers de o domie",
+      "correct_lyric": "Când banii o să fie verzi două d-omie"
+    },
+    {
+      "start": 174.0,
+      "end": 176.98,
+      "text": " Șmecherie ți-au arătat-i băieție",
+      "correct_lyric": "Șmecherie ți-au arătat ei băieție"
+    },
+    {
+      "start": 176.98,
+      "end": 179.11999999999998,
+      "text": " Dar o să îți vină vremea și ție",
+      "correct_lyric": "Dar o să îți vină vremea și ție"
+    },
+    {
+      "start": 179.11999999999998,
+      "end": 181.84,
+      "text": " Când o să încep să-i dai pe toți de pe hârtie",
+      "correct_lyric": "când O să-ncepi să-i dai pe toți de pe hârtie"
+    },
+    {
+      "start": 181.84,
+      "end": 185.07999999999998,
+      "text": " Anul 2003, de la capă s-o iei",
+      "correct_lyric": "E anu 2003 de la capăt s-o iei"
+    },
+    {
+      "start": 185.07999999999998,
+      "end": 187.14,
+      "text": " Familia e ce sunt eu cu ai mei",
+      "correct_lyric": "Familia e ce sunt eu cu ai mei"
+    },
+    {
+      "start": 187.14,
+      "end": 189.66,
+      "text": " Dacă nu dai de mine, dai de ei",
+      "correct_lyric": "Dacă nu dai de mine dai de ei"
+    },
+    {
+      "start": 189.66,
+      "end": 192.44,
+      "text": " Eu am plecat să-mi iau banii mei",
+      "correct_lyric": "Eu am plecat sa-mi iau banii mei"
+    },
+    {
+      "start": 192.44,
+      "end": 194.6,
+      "text": " Dacă tol avant te duce fiecare drum",
+      "correct_lyric": "Că tot la bani te duce fiecare drum"
+    },
+    {
+      "start": 194.6,
+      "end": 197.18,
+      "text": " Și dacă nu iei tu pe toți ia-al tu",
+      "correct_lyric": "Și dacă nu-i iei toți îi ia altu'"
+    },
+    {
+      "start": 197.18,
+      "end": 199.2,
+      "text": " Așa că făi și tu ceva",
+      "correct_lyric": "Așa că fă și tu ceva"
+    },
+    {
+      "start": 199.2,
+      "end": 200.57999999999998,
+      "text": " Să ai și tu ceva",
+      "correct_lyric": "să ai și tu ceva"
+    },
+    {
+      "start": 200.57999999999998,
+      "end": 203.07999999999998,
+      "text": " Și poate va fi bine pentru familia ta",
+      "correct_lyric": "Și poate va fi bine pentru familia ta"
+    },
+    {
+      "start": 203.07999999999998,
+      "end": 205.26,
+      "text": " Când o avant te duce fiecare drum",
+      "correct_lyric": "Că tot la bani te duce fiecare drum"
+    },
+    {
+      "start": 205.26,
+      "end": 207.94,
+      "text": " Și dacă nu iei tu pe toți ia-al tu",
+      "correct_lyric": "Și dacă nu-i iei toți îi ia altu'"
+    },
+    {
+      "start": 207.94,
+      "end": 209.88,
+      "text": " Așa că făi și tu ceva",
+      "correct_lyric": "Așa că fă și tu ceva"
+    },
+    {
+      "start": 209.88,
+      "end": 211.28,
+      "text": " Să ai și tu ceva",
+      "correct_lyric": "să ai și tu ceva"
+    },
+    {
+      "start": 211.28,
+      "end": 213.94,
+      "text": " Și poate va fi bine pentru familia ta",
+      "correct_lyric": "Și poate va fi bine pentru familia ta"
+    }
+  ]
+}
