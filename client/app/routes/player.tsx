@@ -77,8 +77,8 @@ export default function Player() {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [timeWithoutVocals, setTimeWithoutVocals] = useState(0);
   const [showInstrumentalTimer, setShowInstrumentalTimer] = useState(false);
-
   // Filter transcription data to only include entries with lyrics
+
   let lyricsData =
     transcription?.result?.filter(
       (item: any) => item.correct_lyric && item.correct_lyric.trim() !== ""
@@ -368,7 +368,7 @@ export default function Player() {
               ) : (
                 <p
                   className={`text-gray-500 ${
-                    isFullscreen ? "text-3xl" : "text-xl"
+                    isFullscreen ? "text-2xl" : "text-xl"
                   }`}
                 >
                   {isPlaying
@@ -381,7 +381,7 @@ export default function Player() {
                 <div className="text-center mt-6">
                   <p
                     className={`font-bold text-gray-400 leading-relaxed ${
-                      isFullscreen ? "text-3xl" : "text-2xl"
+                      isFullscreen ? "text-2xl" : "text-xl"
                     }`}
                   >
                     {lyricsData[currentLyricIndex + 1].correct_lyric}
