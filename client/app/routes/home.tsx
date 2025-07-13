@@ -2,7 +2,6 @@ import { join } from "path";
 import type { Route } from "./+types/home";
 import { readdir, readFile } from "fs/promises";
 import { existsSync } from "fs";
-import { useNavigate } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Karaoke din Cartier" }];
@@ -72,11 +71,10 @@ export async function loader({ params }: Route.LoaderArgs) {
 
 export default function Home({ loaderData }: Route.ComponentProps) {
   console.log("Loader Data:", loaderData);
-  const navigate = useNavigate();
 
   const handleSongSelect = (songId: string) => {
     console.log("Selected song:", songId);
-    navigate(`/player/${songId}`);
+    window.location.href = `/player/${songId}`;
   };
 
   return (
