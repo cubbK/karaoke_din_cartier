@@ -171,22 +171,22 @@ export default function Player() {
       setIsFullscreen(!!document.fullscreenElement);
     };
 
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.key === "f" || e.key === "F") {
-        toggleFullscreen();
-      }
-      if (e.key === " ") {
-        e.preventDefault();
-        togglePlayPause();
-      }
-    };
+    // const handleKeyPress = (e: KeyboardEvent) => {
+    //   if (e.key === "f" || e.key === "F") {
+    //     toggleFullscreen();
+    //   }
+    //   if (e.key === " ") {
+    //     e.preventDefault();
+    //     togglePlayPause();
+    //   }
+    // };
 
     document.addEventListener("fullscreenchange", handleFullscreenChange);
-    document.addEventListener("keydown", handleKeyPress);
+    // document.addEventListener("keydown", handleKeyPress);
 
     return () => {
       document.removeEventListener("fullscreenchange", handleFullscreenChange);
-      document.removeEventListener("keydown", handleKeyPress);
+      // document.removeEventListener("keydown", handleKeyPress);
     };
   }, []);
 
@@ -316,7 +316,8 @@ export default function Player() {
                             }
                             @keyframes ${animationName} {
                               from {
-                                clip-path: inset(0 100% 0 0);
+                                // clip-path: inset(0 100% 0 0);
+                                 clip-path: inset(0 0% 0 0);
                               }
                               to {
                                 clip-path: inset(0 0% 0 0);
